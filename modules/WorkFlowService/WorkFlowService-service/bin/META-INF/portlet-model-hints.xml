@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.astra.workflowservice.model.Registration">
+		<field name="uuid" type="String" />
+		<field name="RegistrationId" type="long" />
+		<field name="firstname" type="String" />
+		<field name="lastname" type="String" />
+		<field name="course" type="String" />
+		<field name="email" type="String" />
+		<field name="location" type="String" />
+		<field name="status" type="String" />
+		<field name="comments" type="String" />
+		<field name="Workflowstepnumber" type="String" />
+		<field name="WorkflowId" type="String" />
+		<field name="CurrentApprover" type="String">
+			<hint name="max-length">9000</hint>
+		</field>
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.astra.workflowservice.model.WorkFlowConfig">
+		<field name="uuid" type="String" />
+		<field name="WfcId" type="long" />
+		<field name="ConfigKey" type="String" />
+		<field name="Content" type="String">
+			<hint name="max-length">9000</hint>
+		</field>
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+</model-hints>

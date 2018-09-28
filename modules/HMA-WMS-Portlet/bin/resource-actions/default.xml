@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE resource-action-mapping PUBLIC "-//Liferay//DTD Resource Action Mapping 7.0.0//EN" "http://www.liferay.com/dtd/liferay-resource-action-mapping_7_0_0.dtd">
+
+<resource-action-mapping>
+	<portlet-resource>
+		<portlet-name>com_ys_hmawfm_wfms_portlets_ConfigurationPortlet</portlet-name>
+		<permissions>
+			<supports>
+				<action-key>ADD_RS_1</action-key>
+				<action-key>ADD_RS_2</action-key>
+				<action-key>ADD_RS_3</action-key>
+				<action-key>SAVE_POS</action-key>
+				<action-key>EDIT_POS</action-key>
+				<action-key>VIEW_POS</action-key>
+				<action-key>CLOSE_POS</action-key>
+				<action-key>RE_OPN_CLOSE_POS</action-key>
+				<action-key>MOVE_ASSOCIATE</action-key>
+				<action-key>SWAP_ASSOCIATE</action-key>
+				<action-key>TERM_ASSOCIATE</action-key>
+				<action-key>MOVE_ASSOCIATE_TO_DRCT</action-key>
+				<action-key>ADD_ASSOCIATE</action-key>
+				<action-key>APPROVE_DATA</action-key>															
+				<action-key>DIS_APPROVE_DATA</action-key>
+				<action-key>MNG_CONF_DATA_ROLES</action-key>
+				<action-key>EDIT_SYS_POP_FLDS</action-key>
+				<action-key>CRT_POS</action-key>
+			</supports>
+			<site-member-defaults>
+				<action-key>VIEW</action-key>
+			</site-member-defaults>
+			<guest-defaults>
+				<action-key>VIEW</action-key>
+			</guest-defaults>
+			<guest-unsupported>
+				<action-key>CONFIGURATION</action-key>
+			</guest-unsupported>
+		</permissions>
+	</portlet-resource>
+</resource-action-mapping>

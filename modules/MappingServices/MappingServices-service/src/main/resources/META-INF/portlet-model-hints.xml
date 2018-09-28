@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.MappingServices.model.Enquiry">
+		<field name="uuid" type="String" />
+		<field name="Eid" type="long" />
+		<field name="FirstName" type="String" />
+		<field name="LastName" type="String" />
+		<field name="Email" type="String" />
+		<field name="ContactNumber" type="String" />
+		<field name="PartName" type="String" />
+		<field name="PartNumber" type="String" />
+		<field name="Message" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.MappingServices.model.UserExternal">
+		<field name="uuid" type="String" />
+		<field name="uid" type="long" />
+		<field name="Location" type="String" />
+		<field name="PolicyNumber" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+</model-hints>

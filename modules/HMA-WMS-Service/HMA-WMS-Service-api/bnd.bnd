@@ -1,0 +1,9 @@
+Bundle-Name: HMA-WMS-Service-api
+Bundle-SymbolicName: com.ys.hmawfm.wfms.services.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.ys.hmawfm.wfms.services.exception,\
+	com.ys.hmawfm.wfms.services.model,\
+	com.ys.hmawfm.wfms.services.service,\
+	com.ys.hmawfm.wfms.services.service.persistence
+-includeresource: META-INF/service.xml=../HMA-WMS-Service-service/service.xml

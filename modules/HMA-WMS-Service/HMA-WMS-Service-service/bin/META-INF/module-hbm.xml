@@ -1,0 +1,374 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping auto-import="false" default-lazy="false">
+	<import class="com.ys.hmawfm.wfms.services.model.WFMS_action_and_reasoncode" />
+	<import class="com.ys.hmawfm.wfms.services.model.WFMS_action_names" />
+	<import class="com.ys.hmawfm.wfms.services.model.WFMS_Associate_History" />
+	<import class="com.ys.hmawfm.wfms.services.model.WFMS_associate_skills" />
+	<import class="com.ys.hmawfm.wfms.services.model.WFMS_associate_skills_audit" />
+	<import class="com.ys.hmawfm.wfms.services.model.WFMS_Config" />
+	<import class="com.ys.hmawfm.wfms.services.model.WFMS_COS" />
+	<import class="com.ys.hmawfm.wfms.services.model.WFMS_COS_Audit" />
+	<import class="com.ys.hmawfm.wfms.services.model.WFMS_NA_Support" />
+	<import class="com.ys.hmawfm.wfms.services.model.WFMS_NotificationEngine" />
+	<import class="com.ys.hmawfm.wfms.services.model.WFMS_Position" />
+	<import class="com.ys.hmawfm.wfms.services.model.WFMS_Position_Audit" />
+	<import class="com.ys.hmawfm.wfms.services.model.WFMS_Requisition" />
+	<import class="com.ys.hmawfm.wfms.services.model.WFMS_Requisition_Audit" />
+	<import class="com.ys.hmawfm.wfms.services.model.WFMS_routing_and_approvers" />
+	<import class="com.ys.hmawfm.wfms.services.model.WFMS_WorkflowConfig" />
+	<class name="com.ys.hmawfm.wfms.services.model.impl.WFMS_action_and_reasoncodeImpl" table="WFMS_action_and_reasoncode">
+		<id name="aarId" type="java.lang.String">
+			<generator class="assigned" />
+		</id>
+		<property name="action" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="reasonCode" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="description" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="deleteflag" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property name="createdBy" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="createDate" type="org.hibernate.type.TimestampType" />
+		<property name="modifiedBy" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="modifiedDate" type="org.hibernate.type.TimestampType" />
+	</class>
+	<class name="com.ys.hmawfm.wfms.services.model.impl.WFMS_action_namesImpl" table="WFMS_action_names">
+		<id name="actionId" type="java.lang.String">
+			<generator class="assigned" />
+		</id>
+		<property name="actionName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="deleteflag" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property name="createdBy" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="createDate" type="org.hibernate.type.TimestampType" />
+		<property name="modifiedBy" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="modifiedDate" type="org.hibernate.type.TimestampType" />
+	</class>
+	<class name="com.ys.hmawfm.wfms.services.model.impl.WFMS_Associate_HistoryImpl" table="WFMS_Associate_History">
+		<id name="assocHistoryId" type="int">
+			<generator class="assigned" />
+		</id>
+		<property name="associateId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="associateName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="currentPosition" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="history" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="createdBy" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="createDate" type="org.hibernate.type.TimestampType" />
+	</class>
+	<class name="com.ys.hmawfm.wfms.services.model.impl.WFMS_associate_skillsImpl" table="WFMS_associate_skills">
+		<id name="associate_number" type="java.lang.String">
+			<generator class="assigned" />
+		</id>
+		<property name="skills" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+	<class name="com.ys.hmawfm.wfms.services.model.impl.WFMS_associate_skills_auditImpl" table="WFMS_associate_skills_audit">
+		<id name="associate_log_id" type="long">
+			<generator class="identity" />
+		</id>
+		<property name="associate_number" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="userId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="createdBy" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="createDate" type="org.hibernate.type.TimestampType" />
+		<property column="change_" name="change" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+	<class name="com.ys.hmawfm.wfms.services.model.impl.WFMS_ConfigImpl" table="WFMS_Config">
+		<id name="configId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="createdBy" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="createDate" type="org.hibernate.type.TimestampType" />
+		<property name="modifiedBy" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="modifiedDate" type="org.hibernate.type.TimestampType" />
+		<property name="configKey" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="configLabel" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="contentType" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="content" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+	<class name="com.ys.hmawfm.wfms.services.model.impl.WFMS_COSImpl" table="WFMS_COS">
+		<id name="cosId" type="java.lang.String">
+			<generator class="assigned" />
+		</id>
+		<property name="assoicateId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="newPositionNumber" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="action" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="reasonCODE" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="description" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="changeDescription" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="newJobCode" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="sameJobCode" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="sameLeadership" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="sameDept" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="sameMgr" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="routingProcess" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="notificationTo" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="status" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property column="type_" name="type" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="effectiveDate" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="teamNumber" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="shiftCode" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="mgrAssociateNumber" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="manpowerCategiry" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="comments" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="leadershipAssignment" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="associateDateOfHire" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="newDivision" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="newDivisionManager" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="newDepartmentName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="newDepartmentNumber" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="newDepartmentManager" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="newManagerName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="newManagerTitle" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="deleteflagStatus" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property name="RequistionId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="companyId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="scopeGroupId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="createdBy" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="createDate" type="org.hibernate.type.TimestampType" />
+		<property name="modifiedBy" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="modifiedDate" type="org.hibernate.type.TimestampType" />
+		<property name="associatename" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="relatesTo" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="nextApprover" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="roleOfApprover" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="approverList" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="approverStep" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property name="workflow" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="workflowStep" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property name="workflowId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="dummy" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="refCosId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="systemGenerated" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property name="positionNumber" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="currentJobCode" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="currentDivision" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="currentDivisionManager" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="currentDepartmentName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="currentDepartmentNumber" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="currentDepartmentManager" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="currentManagerName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="currentManagerTitle" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="currentTeamNumber" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="currentShiftCode" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="currentLeadershipAssignment" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="currentManpowerRep" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="currentManagerAssocNumber" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="sortApprovedList" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="DuplicateApprovedList" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="DuplicateApprovedListStartIndex" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property name="DuplicateApprovedListEndIndex" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property name="announced" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property name="currentPositionText" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property name="DuplicateCounter" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+	</class>
+	<class name="com.ys.hmawfm.wfms.services.model.impl.WFMS_COS_AuditImpl" table="WFMS_COS_Audit">
+		<id name="cosaId" type="java.lang.String">
+			<generator class="assigned" />
+		</id>
+		<property name="cosId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="userId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="createdBy" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="createDate" type="org.hibernate.type.TimestampType" />
+		<property column="change_" name="change" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="comments" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+	<class name="com.ys.hmawfm.wfms.services.model.impl.WFMS_NA_SupportImpl" table="WFMS_NA_Support">
+		<id name="ASSOCIATE_NUMBER" type="java.lang.String">
+			<generator class="assigned" />
+		</id>
+		<property name="ASSOC_NO" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="ASSOCIATE_DATE_OF_HIRE" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="ASSOCIATE_NAME" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="DEPT_NUMBER" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="DEPT_NO" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property name="DEPT_NAME" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="ASSOCIATE_TITLE" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="SHIFT_CODE" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="TEAM_NUMBER" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="EFFDT" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="TERMINATION_DT" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="MANAGER_ASSOCIATE_NUMBER" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property name="ASSGN_TYPE" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="LEADERSHIP_ASSIGNMENT" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="EMAIL" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="deleteflag" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property name="createdBy" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="createDate" type="org.hibernate.type.TimestampType" />
+		<property name="modifiedBy" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="modifiedDate" type="org.hibernate.type.TimestampType" />
+	</class>
+	<class name="com.ys.hmawfm.wfms.services.model.impl.WFMS_NotificationEngineImpl" table="WFMS_NotificationEngine">
+		<id name="templateId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="companyId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="scopeGroupId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="createdBy" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="createDate" type="org.hibernate.type.TimestampType" />
+		<property name="modifiedBy" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="modifiedDate" type="org.hibernate.type.TimestampType" />
+		<property name="title" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="content" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="contentType" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="comments" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="timesUsed" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+	</class>
+	<class name="com.ys.hmawfm.wfms.services.model.impl.WFMS_PositionImpl" table="WFMS_Position">
+		<id access="com.liferay.portal.dao.orm.hibernate.CamelCasePropertyAccessor" name="pId" type="java.lang.String">
+			<generator class="assigned" />
+		</id>
+		<property name="companyId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="scopeGroupId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="createdBy" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="createDate" type="org.hibernate.type.TimestampType" />
+		<property name="modifiedBy" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="modifiedDate" type="org.hibernate.type.TimestampType" />
+		<property column="active_" name="active" type="com.liferay.portal.dao.orm.hibernate.BooleanType" />
+		<property column="number_" name="number" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="description" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="status" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="reportsTo" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="autoGenerateReq" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="critical" type="com.liferay.portal.dao.orm.hibernate.BooleanType" />
+		<property name="division" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="departmentName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="departmentNumber" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="line" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="ladder" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="mpCatBugdet" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="mpCatFilledWith" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="positionClass" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property column="type_" name="type" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="level" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="leadershipAssignment" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="category" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="subCategory" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="workforceCategory" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="empCategory" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="empCategoryDesc" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="yearEst" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="reasonsFor" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="reavailuationDate" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="associateNumber" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="associateName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="associateTitle" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="comments" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="typicalJobTitle" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="minJobKnowHow" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="duties" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="tasksPerformed" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="lengthOfService" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="degree" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="reqSkills" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="desiredSkills" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="environment" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="weeklyOvertime" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="frequencyOfTravel" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="history" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="other" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="departmentManager" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="divisionManager" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="relatesTo" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="nextApprover" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="workflow" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="workflowStep" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property name="workflowId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="dummy" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="refPosId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="ismodify" type="com.liferay.portal.dao.orm.hibernate.BooleanType" />
+		<property name="disapproveComments" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+	<class name="com.ys.hmawfm.wfms.services.model.impl.WFMS_Position_AuditImpl" table="WFMS_Position_Audit">
+		<id name="paId" type="java.lang.String">
+			<generator class="assigned" />
+		</id>
+		<property access="com.liferay.portal.dao.orm.hibernate.CamelCasePropertyAccessor" name="pId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="userId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="associateId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property column="change_" name="change" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="fromPId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="comments" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="createdBy" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="createDate" type="org.hibernate.type.TimestampType" />
+	</class>
+	<class name="com.ys.hmawfm.wfms.services.model.impl.WFMS_RequisitionImpl" table="WFMS_Requisition">
+		<id name="rwfId" type="java.lang.String">
+			<generator class="assigned" />
+		</id>
+		<property access="com.liferay.portal.dao.orm.hibernate.CamelCasePropertyAccessor" name="rId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="companyId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="scopeGroupId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="createDate" type="org.hibernate.type.TimestampType" />
+		<property name="modifiedDate" type="org.hibernate.type.TimestampType" />
+		<property name="ApprovedDate" type="org.hibernate.type.TimestampType" />
+		<property name="createdBy" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="Number" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="associatenumber" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="associatename" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="status" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="postingType" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="teamNumber" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="associatetype" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="shiftAssign" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="howAvailable" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="whoReplaced" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="dateneeded" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="contactperson" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="contactphonenumber" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="taleonumber" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="other" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="comments" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="deleteflagStatus" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property name="dummy" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="workflowId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="nextapprove" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="roleOfApprover" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="relatesTo" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="workflow" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="workflowStep" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property name="approverStep" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property name="refReqId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="disapproveComments" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+	<class name="com.ys.hmawfm.wfms.services.model.impl.WFMS_Requisition_AuditImpl" table="WFMS_Requisition_Audit">
+		<id name="reqaId" type="java.lang.String">
+			<generator class="assigned" />
+		</id>
+		<property name="reqId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="userId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="createdBy" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="createDate" type="org.hibernate.type.TimestampType" />
+		<property column="change_" name="change" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="comments" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+	<class name="com.ys.hmawfm.wfms.services.model.impl.WFMS_routing_and_approversImpl" table="WFMS_routing_and_approvers">
+		<id name="rapId" type="java.lang.String">
+			<generator class="assigned" />
+		</id>
+		<property name="action" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="changeDescription" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="currentJobCodeORLeadership" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="newJobCodeORLeadership" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="SameJobCode" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="SameLeadership" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="isSameDept" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="isSameMgr" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="routingProcess" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="notificationTo" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="deleteflag" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property name="createdBy" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="createDate" type="org.hibernate.type.TimestampType" />
+		<property name="modifiedBy" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="modifiedDate" type="org.hibernate.type.TimestampType" />
+	</class>
+	<class name="com.ys.hmawfm.wfms.services.model.impl.WFMS_WorkflowConfigImpl" table="WFMS_WorkflowConfig">
+		<id name="wfcId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="createdBy" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="createDate" type="org.hibernate.type.TimestampType" />
+		<property name="modifiedBy" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="modifiedDate" type="org.hibernate.type.TimestampType" />
+		<property name="configKey" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="configLabel" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="contentType" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="content" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+</hibernate-mapping>

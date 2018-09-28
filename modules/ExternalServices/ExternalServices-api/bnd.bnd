@@ -1,0 +1,9 @@
+Bundle-Name: ExternalServices-api
+Bundle-SymbolicName: com.externalservices.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.externalservices.exception,\
+	com.externalservices.model,\
+	com.externalservices.service,\
+	com.externalservices.service.persistence
+-includeresource: META-INF/service.xml=../ExternalServices-service/service.xml

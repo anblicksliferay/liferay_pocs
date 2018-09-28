@@ -1,0 +1,9 @@
+Bundle-Name: HMA-WMS-Service-service
+Bundle-SymbolicName: com.ys.hmawfm.wfms.services.service
+Bundle-Version: 1.0.0
+Liferay-Require-SchemaVersion: 1.0.0
+Liferay-Service: true
+Export-Package:\
+	com.ys.hmawfm.wfms.services.service.base,\
+	com.ys.hmawfm.wfms.services.service.impl,\
+	com.ys.hmawfm.wfms.services.model.impl

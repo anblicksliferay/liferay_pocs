@@ -1,0 +1,1 @@
+create index IX_979558BB on ExternalServices_leykartEnquiry (uuid_[$COLUMN_LENGTH:75$], companyId);

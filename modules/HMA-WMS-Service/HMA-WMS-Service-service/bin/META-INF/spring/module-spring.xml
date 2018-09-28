@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation=" http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean class="com.ys.hmawfm.wfms.services.service.impl.WFMS_action_and_reasoncodeLocalServiceImpl" id="com.ys.hmawfm.wfms.services.service.WFMS_action_and_reasoncodeLocalService" />
+	<bean class="com.ys.hmawfm.wfms.services.service.persistence.impl.WFMS_action_and_reasoncodePersistenceImpl" id="com.ys.hmawfm.wfms.services.service.persistence.WFMS_action_and_reasoncodePersistence" parent="basePersistence" />
+	<bean class="com.ys.hmawfm.wfms.services.service.impl.WFMS_action_namesLocalServiceImpl" id="com.ys.hmawfm.wfms.services.service.WFMS_action_namesLocalService" />
+	<bean class="com.ys.hmawfm.wfms.services.service.persistence.impl.WFMS_action_namesPersistenceImpl" id="com.ys.hmawfm.wfms.services.service.persistence.WFMS_action_namesPersistence" parent="basePersistence" />
+	<bean class="com.ys.hmawfm.wfms.services.service.impl.WFMS_Associate_HistoryLocalServiceImpl" id="com.ys.hmawfm.wfms.services.service.WFMS_Associate_HistoryLocalService" />
+	<bean class="com.ys.hmawfm.wfms.services.service.impl.WFMS_Associate_HistoryServiceImpl" id="com.ys.hmawfm.wfms.services.service.WFMS_Associate_HistoryService" />
+	<bean class="com.ys.hmawfm.wfms.services.service.persistence.impl.WFMS_Associate_HistoryPersistenceImpl" id="com.ys.hmawfm.wfms.services.service.persistence.WFMS_Associate_HistoryPersistence" parent="basePersistence" />
+	<bean class="com.ys.hmawfm.wfms.services.service.impl.WFMS_associate_skillsLocalServiceImpl" id="com.ys.hmawfm.wfms.services.service.WFMS_associate_skillsLocalService" />
+	<bean class="com.ys.hmawfm.wfms.services.service.impl.WFMS_associate_skillsServiceImpl" id="com.ys.hmawfm.wfms.services.service.WFMS_associate_skillsService" />
+	<bean class="com.ys.hmawfm.wfms.services.service.persistence.impl.WFMS_associate_skillsPersistenceImpl" id="com.ys.hmawfm.wfms.services.service.persistence.WFMS_associate_skillsPersistence" parent="basePersistence" />
+	<bean class="com.ys.hmawfm.wfms.services.service.impl.WFMS_associate_skills_auditLocalServiceImpl" id="com.ys.hmawfm.wfms.services.service.WFMS_associate_skills_auditLocalService" />
+	<bean class="com.ys.hmawfm.wfms.services.service.impl.WFMS_associate_skills_auditServiceImpl" id="com.ys.hmawfm.wfms.services.service.WFMS_associate_skills_auditService" />
+	<bean class="com.ys.hmawfm.wfms.services.service.persistence.impl.WFMS_associate_skills_auditPersistenceImpl" id="com.ys.hmawfm.wfms.services.service.persistence.WFMS_associate_skills_auditPersistence" parent="basePersistence" />
+	<bean class="com.ys.hmawfm.wfms.services.service.impl.WFMS_ConfigLocalServiceImpl" id="com.ys.hmawfm.wfms.services.service.WFMS_ConfigLocalService" />
+	<bean class="com.ys.hmawfm.wfms.services.service.persistence.impl.WFMS_ConfigPersistenceImpl" id="com.ys.hmawfm.wfms.services.service.persistence.WFMS_ConfigPersistence" parent="basePersistence" />
+	<bean class="com.ys.hmawfm.wfms.services.service.impl.WFMS_COSLocalServiceImpl" id="com.ys.hmawfm.wfms.services.service.WFMS_COSLocalService" />
+	<bean class="com.ys.hmawfm.wfms.services.service.impl.WFMS_COSServiceImpl" id="com.ys.hmawfm.wfms.services.service.WFMS_COSService" />
+	<bean class="com.ys.hmawfm.wfms.services.service.persistence.impl.WFMS_COSPersistenceImpl" id="com.ys.hmawfm.wfms.services.service.persistence.WFMS_COSPersistence" parent="basePersistence" />
+	<bean class="com.ys.hmawfm.wfms.services.service.impl.WFMS_COS_AuditLocalServiceImpl" id="com.ys.hmawfm.wfms.services.service.WFMS_COS_AuditLocalService" />
+	<bean class="com.ys.hmawfm.wfms.services.service.impl.WFMS_COS_AuditServiceImpl" id="com.ys.hmawfm.wfms.services.service.WFMS_COS_AuditService" />
+	<bean class="com.ys.hmawfm.wfms.services.service.persistence.impl.WFMS_COS_AuditPersistenceImpl" id="com.ys.hmawfm.wfms.services.service.persistence.WFMS_COS_AuditPersistence" parent="basePersistence" />
+	<bean class="com.ys.hmawfm.wfms.services.service.impl.WFMS_NA_SupportLocalServiceImpl" id="com.ys.hmawfm.wfms.services.service.WFMS_NA_SupportLocalService" />
+	<bean class="com.ys.hmawfm.wfms.services.service.impl.WFMS_NA_SupportServiceImpl" id="com.ys.hmawfm.wfms.services.service.WFMS_NA_SupportService" />
+	<bean class="com.ys.hmawfm.wfms.services.service.persistence.impl.WFMS_NA_SupportPersistenceImpl" id="com.ys.hmawfm.wfms.services.service.persistence.WFMS_NA_SupportPersistence" parent="basePersistence" />
+	<bean class="com.ys.hmawfm.wfms.services.service.impl.WFMS_NotificationEngineLocalServiceImpl" id="com.ys.hmawfm.wfms.services.service.WFMS_NotificationEngineLocalService" />
+	<bean class="com.ys.hmawfm.wfms.services.service.impl.WFMS_NotificationEngineServiceImpl" id="com.ys.hmawfm.wfms.services.service.WFMS_NotificationEngineService" />
+	<bean class="com.ys.hmawfm.wfms.services.service.persistence.impl.WFMS_NotificationEnginePersistenceImpl" id="com.ys.hmawfm.wfms.services.service.persistence.WFMS_NotificationEnginePersistence" parent="basePersistence" />
+	<bean class="com.ys.hmawfm.wfms.services.service.impl.WFMS_PositionLocalServiceImpl" id="com.ys.hmawfm.wfms.services.service.WFMS_PositionLocalService" />
+	<bean class="com.ys.hmawfm.wfms.services.service.impl.WFMS_PositionServiceImpl" id="com.ys.hmawfm.wfms.services.service.WFMS_PositionService" />
+	<bean class="com.ys.hmawfm.wfms.services.service.persistence.impl.WFMS_PositionPersistenceImpl" id="com.ys.hmawfm.wfms.services.service.persistence.WFMS_PositionPersistence" parent="basePersistence" />
+	<bean class="com.ys.hmawfm.wfms.services.service.impl.WFMS_Position_AuditLocalServiceImpl" id="com.ys.hmawfm.wfms.services.service.WFMS_Position_AuditLocalService" />
+	<bean class="com.ys.hmawfm.wfms.services.service.impl.WFMS_Position_AuditServiceImpl" id="com.ys.hmawfm.wfms.services.service.WFMS_Position_AuditService" />
+	<bean class="com.ys.hmawfm.wfms.services.service.persistence.impl.WFMS_Position_AuditPersistenceImpl" id="com.ys.hmawfm.wfms.services.service.persistence.WFMS_Position_AuditPersistence" parent="basePersistence" />
+	<bean class="com.ys.hmawfm.wfms.services.service.impl.WFMS_RequisitionLocalServiceImpl" id="com.ys.hmawfm.wfms.services.service.WFMS_RequisitionLocalService" />
+	<bean class="com.ys.hmawfm.wfms.services.service.impl.WFMS_RequisitionServiceImpl" id="com.ys.hmawfm.wfms.services.service.WFMS_RequisitionService" />
+	<bean class="com.ys.hmawfm.wfms.services.service.persistence.impl.WFMS_RequisitionPersistenceImpl" id="com.ys.hmawfm.wfms.services.service.persistence.WFMS_RequisitionPersistence" parent="basePersistence" />
+	<bean class="com.ys.hmawfm.wfms.services.service.impl.WFMS_Requisition_AuditLocalServiceImpl" id="com.ys.hmawfm.wfms.services.service.WFMS_Requisition_AuditLocalService" />
+	<bean class="com.ys.hmawfm.wfms.services.service.impl.WFMS_Requisition_AuditServiceImpl" id="com.ys.hmawfm.wfms.services.service.WFMS_Requisition_AuditService" />
+	<bean class="com.ys.hmawfm.wfms.services.service.persistence.impl.WFMS_Requisition_AuditPersistenceImpl" id="com.ys.hmawfm.wfms.services.service.persistence.WFMS_Requisition_AuditPersistence" parent="basePersistence" />
+	<bean class="com.ys.hmawfm.wfms.services.service.impl.WFMS_routing_and_approversLocalServiceImpl" id="com.ys.hmawfm.wfms.services.service.WFMS_routing_and_approversLocalService" />
+	<bean class="com.ys.hmawfm.wfms.services.service.persistence.impl.WFMS_routing_and_approversPersistenceImpl" id="com.ys.hmawfm.wfms.services.service.persistence.WFMS_routing_and_approversPersistence" parent="basePersistence" />
+	<bean class="com.ys.hmawfm.wfms.services.service.impl.WFMS_WorkflowConfigLocalServiceImpl" id="com.ys.hmawfm.wfms.services.service.WFMS_WorkflowConfigLocalService" />
+	<bean class="com.ys.hmawfm.wfms.services.service.persistence.impl.WFMS_WorkflowConfigPersistenceImpl" id="com.ys.hmawfm.wfms.services.service.persistence.WFMS_WorkflowConfigPersistence" parent="basePersistence" />
+</beans>

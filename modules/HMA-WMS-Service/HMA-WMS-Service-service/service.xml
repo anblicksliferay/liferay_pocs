@@ -1,0 +1,650 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.0.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_0_0.dtd">
+
+<service-builder package-path="com.ys.hmawfm.wfms.services">
+	<namespace>WMS</namespace>
+	
+	<!-- This Entity is for WMS Notifications -->
+	<entity name="WFMS_NotificationEngine" local-service="true" remote-service="true" human-name="WFMS_NotificationEngine" table="WFMS_NotificationEngine">
+
+		<!-- PK fields -->
+		<column name="templateId" type="long" primary="true" />
+
+		<!-- Audit fields -->
+		<column name="companyId" type="long" />
+		<column name="scopeGroupId" type="long" />
+		<column name="createdBy" type="String" />
+		<column name="createDate" type="Date" />
+		<column name="modifiedBy" type="String" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Other fields -->
+		<column name="title" type="String" />
+		<column name="content" type="String" />
+		<column name="contentType" type="String" />
+		<column name="comments" type="String" />
+		<column name="timesUsed" type="int" />
+		
+		<!-- Order -->
+		<order by="asc">
+			<order-column name="templateId" />
+		</order>
+
+		<!-- Finder methods -->
+		<finder name="Title" return-type="Collection">
+			<finder-column name="title" />
+		</finder>
+		<finder name="Content" return-type="Collection">
+			<finder-column name="content" />
+		</finder>
+		<finder name="ContentType" return-type="Collection">
+			<finder-column name="contentType" />
+		</finder>
+		<finder name="CreatedBy" return-type="Collection">
+			<finder-column name="createdBy" />
+		</finder>
+		
+		
+	</entity>
+	
+	<!-- This Entity is for WMS Position -->
+    <entity name="WFMS_Position" local-service="true" remote-service="true" human-name="WFMS_Position" table="WFMS_Position">
+	
+        <!-- PK fields -->
+        <column name="pId" type="String" primary="true" />
+
+        <!-- Audit fields -->
+        <column name="companyId" type="long" />
+        <column name="scopeGroupId" type="long" />
+        <column name="createdBy" type="String" />
+        <column name="createDate" type="Date" />
+        <column name="modifiedBy" type="String" />
+        <column name="modifiedDate" type="Date" />
+
+		<!-- Other fields -->
+        <column name="active" type="boolean" />
+        <column name="number" type="String" />
+        <column name="description" type="String" />
+        <column name="status" type="String" />
+        <column name="reportsTo" type="String" />
+        <column name="autoGenerateReq" type="String" />
+        <column name="critical" type="boolean"/>
+        <column name="division" type="String" />
+        <column name="departmentName" type="String" />
+        <column name="departmentNumber" type="String" />
+        <column name="line" type="String" />
+        <column name="ladder" type="String" />
+        <column name="mpCatBugdet" type="String" />
+        <column name="mpCatFilledWith" type="String" />
+        <column name="positionClass" type="String" />
+        <column name="type" type="String" />
+        <column name="level" type="String" />
+        <column name="leadershipAssignment" type="String" />
+        <column name="category" type="String" />
+        <column name="subCategory" type="String" />
+        <column name="workforceCategory" type="String" />
+        <column name="empCategory" type="String" />
+        <column name="empCategoryDesc" type="String" />
+        <column name="yearEst" type="String" />
+        <column name="reasonsFor" type="String" />
+        <column name="reavailuationDate" type="String" />
+        <column name="associateNumber" type="String" />
+        <column name="associateName" type="String" />
+        <column name="associateTitle" type="String" />
+        <column name="comments" type="String" />
+        <column name="typicalJobTitle" type="String" />
+        <column name="minJobKnowHow" type="String" />
+        <column name="duties" type="String" />
+        <column name="tasksPerformed" type="String" />
+        <column name="lengthOfService" type="String" />
+        <column name="degree" type="String" />
+        <column name="reqSkills" type="String" />
+        <column name="desiredSkills" type="String" />
+        <column name="environment" type="String" />
+        <column name="weeklyOvertime" type="String" />
+        <column name="frequencyOfTravel" type="String" />
+        <column name="history" type="String" />
+        <column name="other" type="String" />
+       <column name="departmentManager" type="String" />        
+        <column name="divisionManager" type="String"></column>
+        
+        <!-- for workflow columns -->
+        <column name="relatesTo" type="String"></column>
+       <column name="nextApprover" type="String"></column>
+       <column name="workflow" type="String"></column>
+       <column name="workflowStep" type="int"></column>
+       <column name="workflowId" type="String"></column>
+       <column name="dummy" type="String"></column>
+       <column name="refPosId" type="String"></column>
+        <column name="ismodify" type="boolean"></column>
+        <column name="disapproveComments" type="String"></column>
+        <!-- Order -->
+        <order by="asc">
+            <order-column name="pId" />
+        </order>
+
+		<!-- Finder methods -->
+		<finder return-type="Collection" name="refPosId">
+		
+		<finder-column name="refPosId"></finder-column>
+		</finder>
+		<finder return-type="Collection" name="dummy">
+		
+		<finder-column name="dummy"></finder-column>
+		</finder>
+        <finder name="Number" return-type="Collection">
+            <finder-column name="number" />
+        </finder>
+        <finder name="Category" return-type="Collection">
+            <finder-column name="category" />
+        </finder>
+        <finder name="AssociateNumber" return-type="Collection">
+            <finder-column name="associateNumber" />
+        </finder>
+        <finder name="autoGenerateReq" return-type="Collection">
+            <finder-column name="autoGenerateReq" />
+        </finder>
+        <finder name="CreatedBy" return-type="Collection">
+            <finder-column name="createdBy" />
+        </finder>
+        
+           <finder name="position" return-type="WFMS_Position">
+            <finder-column name="pId" />
+        </finder>
+         <finder name="positionIdGetByStaus" return-type="Collection">
+            <finder-column name="status" />
+        </finder>
+		        <finder name="workflowId" return-type="Collection">
+		<finder-column name="workflowId" />
+		</finder>
+		<finder name="DepartmentName" return-type="Collection">
+			<finder-column name="departmentName" />
+		</finder>
+					<finder name="ReportsTo" return-type="Collection">
+			<finder-column name="reportsTo" />
+		</finder>
+		<finder name="NextApprover" return-type="Collection">
+			<finder-column name="nextApprover" comparator="LIKE"/>
+		</finder> 
+    </entity>
+     <!-- WFMS_Position_Audit entity -->
+    
+    <entity name="WFMS_Position_Audit" local-service="true" remote-service="true" human-name="WFMS_Position_Audit" table="WFMS_Position_Audit" >
+	
+		<!-- PK fields -->
+		<column name="paId" type="String" primary="true" />
+			
+		<!-- Other Fields -->
+		<column name="pId" type="String" />
+		<column name="userId" type="long"/>
+		<column name="associateId" type="String"/>
+		<column name="change" type="String" />
+		<column name="fromPId" type="String" />
+		<column name="comments" type="String" />
+		<!-- Audit fields -->
+		<column name="createdBy" type="String" />
+		<column name="createDate" type="Date" />
+		
+				
+		<!-- Order -->
+		<order by="desc">
+			<order-column name="createDate" />
+		</order>
+		
+		<!-- Finder Methods -->
+		<finder name="PosIdForAudit" return-type="Collection">
+            <finder-column name="pId" />
+        </finder>
+				
+	</entity>
+    
+    <!-- WMS_Requisition_WF entity -->
+		<entity name="WFMS_Requisition" local-service="true" remote-service="true" human-name="WFMS_Requisition" table="WFMS_Requisition" >
+		
+		<!-- PK fields -->
+		<column name="rwfId"  type="String" primary="true"></column>	
+		<column name="rId" type="String"></column>
+			
+        <!-- Audit fields -->
+        <column name="companyId" type="long" />
+        <column name="scopeGroupId" type="long" />
+        <column name="createDate" type="Date" />
+        <column name="modifiedDate" type="Date" />
+         <column name="ApprovedDate" type="Date" />
+          <column name="createdBy" type="String" />
+        <!-- Other fields -->
+        
+       
+       <column name="Number" type="String" />
+        <column name="associatenumber" type="String" />
+        <column name="associatename" type="String" />
+        <column name="status" type="String" />
+        <column name="postingType" type="String" />
+        <column name="teamNumber" type="String" />
+        <column name="associatetype" type="String" />
+        <column name="shiftAssign" type="String" />
+        <column name="howAvailable" type="String" />
+        <column name="whoReplaced" type="String" />
+        <column name="dateneeded" type="String" />
+        <column name="contactperson" type="String" />
+        <column name="contactphonenumber" type="String" />
+        <column name="taleonumber" type="String"></column>
+        <column name="other" type="String" /> 
+        <column name="comments" type="String"></column>
+        <column name="deleteflagStatus" type="int"></column>
+       
+      
+        <!-- for workflow columns -->
+        <column name="dummy" type="String"></column>
+        <column name="workflowId" type="String"></column>
+        <column name="nextapprove" type="String"></column>
+         <column name="roleOfApprover" type="String"></column>
+        <column name="relatesTo" type="String"></column>
+        <column name="workflow" type="String"></column>
+        <column name="workflowStep" type="int"></column>
+        <column name="approverStep" type="int"></column>
+        <column name="refReqId" type="String"></column>
+       <column name="disapproveComments" type="String"></column>
+       
+        <!-- Order -->
+        <order by="asc">
+        <order-column name="rId"></order-column>
+        </order>
+		        <finder name="Status_Pid_Colllection" return-type="Collection">
+		<finder-column name="status"/>
+		<finder-column name="rId"/>
+		</finder>
+ <finder name="requisition" return-type="WFMS_Requisition">
+            <finder-column name="rwfId" />
+        </finder>
+  <finder name="position" return-type="WFMS_Requisition">
+            <finder-column name="rId" />
+        </finder>
+         <finder name="positionnumber" return-type="Collection">
+            <finder-column name="Number" />
+        </finder>
+         <finder name="positionId" return-type="Collection">
+            <finder-column name="rId" />
+        </finder> 
+         <finder name="positionIdGetByStaus" return-type="Collection">
+            <finder-column name="status" />
+        </finder>
+         <finder name="dummy" return-type="Collection">
+            <finder-column name="dummy" />
+        </finder>
+        <finder name="workflowId" return-type="Collection">
+            <finder-column name="workflowId" />
+        </finder>
+        <finder return-type="WFMS_Requisition" name="positionassociate">
+        	<finder-column name="Number" />
+        	<finder-column name="associatenumber" />
+        </finder>
+        <finder name="NextApprove" return-type="Collection">
+			<finder-column name="nextapprove"  comparator="LIKE"/>
+		</finder>
+		<finder name="RoleOfApprover" return-type="Collection">
+			<finder-column name="roleOfApprover" />
+		</finder>
+	</entity>
+	
+	<!-- This Entity is for WMS Requisition Audit Values -->
+	<entity name="WFMS_Requisition_Audit" local-service="true" remote-service="true" human-name="WFMS_Requisition_Audit" table="WFMS_Requisition_Audit">
+	
+		<!-- PK fields -->
+		<column name="reqaId" type="String" primary="true" />
+		<column name="reqId" type="String" />
+		<column name="userId" type="long"></column>
+		
+		<!-- Audit fields -->
+		<column name="createdBy" type="String" />
+		<column name="createDate" type="Date" />
+		
+		<!-- Other fields -->
+		<column name="change" type="String" />
+		<column name="comments" type="String"></column>
+		
+		<!-- Order -->
+		<order by="desc">
+			<order-column name="createDate" />
+		</order>
+		
+		<!-- Finder Methods -->
+		<finder name="ReqIdForAudit" return-type="Collection">
+            <finder-column name="reqId" />
+        </finder>
+				
+	</entity>
+	
+
+	<!-- WMS_COS entity -->
+	<entity name="WFMS_COS" local-service="true" remote-service="true" human-name="WFMS_COS" table="WFMS_COS">
+		
+		<!-- PK fields	 -->
+		<column name="cosId" type="String" primary="true"></column>
+		
+		<column name="assoicateId" type="String"></column>		
+		<column name="newPositionNumber" type="String"></column>
+		
+		
+		
+		<!-- Other fields -->
+		<column name="action" type="String"></column>
+		<column name="reasonCODE" type="String"></column>
+		<column name="description" type="String"></column>
+		<column name="changeDescription" type="String"></column>
+		
+		<!-- New position fields -->
+		<column name="newJobCode" type="String"></column>
+		<column name="sameJobCode" type="String"></column>
+		<column name="sameLeadership" type="String"></column>
+		<column name="sameDept" type="String"></column>
+		<column name="sameMgr" type="String"></column>
+		<column name="routingProcess" type="String"></column>
+		<column name="notificationTo" type="String"></column>
+		<column name="status" type="String"></column>
+		
+		<column name="type" type="String"></column>
+		<column name="effectiveDate" type="String"></column>
+		<column name="teamNumber" type="String"></column>
+		<column name="shiftCode" type="String"></column>
+		<column name="mgrAssociateNumber" type="String"></column>
+		<column name="manpowerCategiry" type="String"></column>
+		<column name="comments" type="String"></column>
+		<column name="leadershipAssignment" type="String"></column>
+		<column name="associateDateOfHire" type="String"></column>
+		
+		<column name="newDivision" type="String"></column>
+		<column name="newDivisionManager" type="String"></column>
+		<column name="newDepartmentName" type="String"></column>
+		<column name="newDepartmentNumber" type="String"></column>
+		<column name="newDepartmentManager" type="String"></column>
+		<column name="newManagerName" type="String"></column>
+		<column name="newManagerTitle" type="String"></column>
+		<column name="deleteflagStatus" type="int"></column>
+		  <column name="RequistionId" type="String"></column>
+		
+		<!-- Audit fields -->
+        <column name="companyId" type="long" />
+        <column name="scopeGroupId" type="long" />
+        <column name="createdBy" type="String" />
+        <column name="createDate" type="Date" />
+        <column name="modifiedBy" type="String" />
+        <column name="modifiedDate" type="Date" />
+        <column name="associatename" type="String"></column>
+        
+        <!-- for workflow columns -->
+        <column name="relatesTo" type="String"></column>
+        <column name="nextApprover" type="String"></column>
+        <column name="roleOfApprover" type="String"></column>
+        <column name="approverList" type="String"></column>
+        <column name="approverStep" type="int"></column>
+        <column name="workflow" type="String"></column>
+        <column name="workflowStep" type="int"></column>
+        <column name="workflowId" type="String"></column>
+        <column name="dummy" type="String"></column>
+        <column name="refCosId" type="String"></column>
+        <column name="systemGenerated" type="int"></column>
+        
+        <!-- for current position columns -->
+        <column name="positionNumber" type="String"></column>
+        <column name="currentJobCode" type="String"></column>
+        <column name="currentDivision" type="String"></column>
+		<column name="currentDivisionManager" type="String"></column>
+		<column name="currentDepartmentName" type="String"></column>
+		<column name="currentDepartmentNumber" type="String"></column>
+		<column name="currentDepartmentManager" type="String"></column>
+		<column name="currentManagerName" type="String"></column>
+		<column name="currentManagerTitle" type="String"></column>
+		<column name="currentTeamNumber" type="String"></column>
+		<column name="currentShiftCode" type="String"></column>
+		<column name="currentLeadershipAssignment" type="String"></column>
+		<column name="currentManpowerRep" type="String"></column>
+		<column name="currentManagerAssocNumber" type="String"></column>
+        
+       	<column name="sortApprovedList" type="String"></column>
+       	 <!-- Newly added Columns -->
+        <column name="DuplicateApprovedList" type="String"></column>
+        <column name="DuplicateApprovedListStartIndex" type="int"></column>
+        <column name="DuplicateApprovedListEndIndex" type="int"></column>
+        <column name="announced" type="int"></column>
+        <column name="currentPositionText" type="int"></column>
+        <column name="DuplicateCounter" type="int"></column>
+       	
+        <order by="asc">
+        	<order-column name="cosId"></order-column>
+        </order>
+        
+        <finder name="AssoicateId" return-type="Collection">
+            <finder-column name="assoicateId" />
+        </finder>
+         <finder name="Action" return-type="Collection">
+            <finder-column name="action" />
+        </finder>
+         <finder name="cos" return-type="WFMS_COS">
+            <finder-column name="cosId" />
+        </finder>
+         <finder name="positionIdGetByStaus" return-type="Collection">
+            <finder-column name="status" />
+        </finder>
+        <finder return-type="Collection" name="cosIdGetByPosId">
+        <finder-column name="positionNumber"></finder-column>
+        </finder>
+        <finder name="associateId" return-type="WFMS_COS">
+            <finder-column name="assoicateId" />
+        </finder>
+        <finder name="newPositionNumber" return-type="Collection">
+            <finder-column name="newPositionNumber" />
+        </finder>
+        <finder name="NextApprover" return-type="Collection">
+			<finder-column name="nextApprover" comparator="LIKE"/>
+		</finder> 
+		<finder name="RoleOfApprover" return-type="Collection">
+			<finder-column name="roleOfApprover" />
+		</finder> 
+	</entity>
+
+	<!--  WFMS_COS_AUDIT Entity -->
+	
+	<entity name="WFMS_COS_Audit" local-service="true" remote-service="true" human-name="WFMS_COS_Audit" table="WFMS_COS_Audit">
+	
+		<!-- PK fields -->
+		<column name="cosaId" type="String" primary="true" />
+		<column name="cosId" type="String" />
+		<column name="userId" type="long"></column>
+		
+		<!-- Audit fields -->
+		<column name="createdBy" type="String" />
+		<column name="createDate" type="Date" />
+		
+		<!-- Other fields -->
+		<column name="change" type="String" />
+		<column name="comments" type="String"></column>
+		
+		<!-- Order -->
+		<order by="desc">
+			<order-column name="createDate" />
+		</order>
+		
+		
+		<!-- Finder Methods -->
+		<finder name="CosIdForAudit" return-type="Collection">
+            <finder-column name="cosId" />
+        </finder>
+				
+	</entity>
+	
+
+	<!-- This Entity is for WMS Configuration Values -->
+	<entity name="WFMS_Config" local-service="true" remote-service="false" human-name="WFMS_Configuration" table="WFMS_Config">
+
+		<!-- PK fields -->
+		<column name="configId" type="long" primary="true" />
+		
+		<!-- Audit fields -->
+		<column name="createdBy" type="String" />
+		<column name="createDate" type="Date" />
+		<column name="modifiedBy" type="String" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Other fields -->
+		<column name="configKey" type="String" />
+		<column name="configLabel" type="String" />
+		<column name="contentType" type="String" />
+		<column name="content" type="String" />
+
+		<!-- Order -->
+		<order by="asc">
+			<order-column name="configLabel" />
+		</order>
+
+		<!-- Finder methods -->
+		<finder name="ConfigKey" return-type="WFMS_Config">
+			<finder-column name="configKey" />
+		</finder>
+	</entity>
+	
+	
+	<!-- This Entity is for WMS Workflow Configuration Values -->
+	<entity name="WFMS_WorkflowConfig" local-service="true" remote-service="false" human-name="WFMS_WorkflowConfig" table="WFMS_WorkflowConfig">
+
+		<!-- PK fields -->
+		<column name="wfcId" type="long" primary="true" />
+		
+		<!-- Audit fields -->
+		<column name="createdBy" type="String" />
+		<column name="createDate" type="Date" />
+		<column name="modifiedBy" type="String" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Other fields -->
+		<column name="configKey" type="String" />
+		<column name="configLabel" type="String" />
+		<column name="contentType" type="String" />
+		<column name="content" type="String" />
+
+		<!-- Order -->
+		<order by="asc">
+			<order-column name="configLabel" />
+		</order>
+
+		<!-- Finder methods -->
+		<finder name="ConfigKey" return-type="WFMS_WorkflowConfig">
+			<finder-column name="configKey" />
+		</finder>
+	</entity>
+	
+	<entity  name="WFMS_routing_and_approvers" local-service="true" remote-service="false" human-name="WFMS_routing_and_approvers" table="WFMS_routing_and_approvers">
+		<column name="rapId" type="String"  primary="true"></column>
+		<column name="action" type="String"></column>
+		<column name="changeDescription" type="String"></column>
+		<column name="currentJobCodeORLeadership" type="String"></column>
+		<column name="newJobCodeORLeadership" type="String"></column>
+		<column name="SameJobCode" type="String"></column>
+		<column name="SameLeadership" type="String"></column>
+		<column name="isSameDept" type="String"></column>
+		<column name="isSameMgr" type="String"></column>
+		<column name="routingProcess" type="String"></column>
+		<column name="notificationTo" type="String"></column>
+		 <column name="deleteflag" type="int"></column>
+		<!-- Audit fields -->
+		<column name="createdBy" type="String" />
+		<column name="createDate" type="Date" />
+		<column name="modifiedBy" type="String" />
+		<column name="modifiedDate" type="Date" />
+		
+	<order by="asc">
+	<order-column name="changeDescription"></order-column>
+	</order>
+	
+	<finder name="routing" return-type="WFMS_routing_and_approvers">
+            <finder-column name="rapId" />
+        </finder>
+	
+	</entity>
+	<entity name="WFMS_action_and_reasoncode"  local-service="true" remote-service="false" human-name="WFMS_action_and_reasoncode" table="WFMS_action_and_reasoncode">
+
+	<column name="aarId" type="String"  primary="true"></column>
+	<column name="action" type="String"></column>
+	<column name="reasonCode" type="String"></column>
+	<column name="description" type="String"></column>
+	 <column name="deleteflag" type="int"></column>
+	<!-- Audit fields -->
+		<column name="createdBy" type="String" />
+		<column name="createDate" type="Date" />
+		<column name="modifiedBy" type="String" />
+		<column name="modifiedDate" type="Date" />
+		
+		<finder name="reasoncode" return-type="WFMS_action_and_reasoncode">
+            <finder-column name="aarId" />
+        </finder>
+		
+	</entity>
+		<entity name="WFMS_action_names"  local-service="true" remote-service="false" human-name="WFMS_action_names" table="WFMS_action_names">
+
+	<column name="actionId" type="String"  primary="true"></column>
+	<column name="actionName" type="String"></column>
+	 <column name="deleteflag" type="int"></column>
+	<!-- Audit fields -->
+		<column name="createdBy" type="String" />
+		<column name="createDate" type="Date" />
+		<column name="modifiedBy" type="String" />
+		<column name="modifiedDate" type="Date" />		
+	</entity>
+	 <entity name="WFMS_associate_skills_audit" local-service="true" remote-service="true" human-name="WFMS_associate_skills_audit" table="WFMS_associate_skills_audit" >
+                <column name="associate_log_id" type="long" primary="true" id-type="identity"/>
+                <column name="associate_number" type="String"/>
+                <column name="userId" type="long"/>
+                <column name="createdBy" type="String" />
+		<column name="createDate" type="Date" />
+		<column name="change" type="String" />              
+	 </entity>
+         
+          <entity name="WFMS_associate_skills" local-service="true" remote-service="true" human-name="WFMS_associate_skills" table="WFMS_associate_skills" >		
+		<column name="associate_number" type="String" primary="true" />
+                <column name="skills" type="String"  />	
+              	
+	 </entity>
+   
+         <entity name="WFMS_Associate_History"  local-service="true" remote-service="true" human-name="WFMS_Associate_History" table="WFMS_Associate_History"  >
+            <column name="assocHistoryId" type="int" primary="true"></column>
+            <column name="associateId" type="String" />
+            <column name="associateName" type="String"></column>
+            <column name="currentPosition" type="String"></column>
+            <column name="history" type="String"></column>
+            <column name="createdBy" type="String" />
+            <column name="createDate" type="Date" />
+	 </entity>
+         
+         
+   <!--  NA Support Table in local db -->
+      <entity name="WFMS_NA_Support"  local-service="true" remote-service="true" human-name="WFMS_NA_Support" table="WFMS_NA_Support"  >
+       	 
+       <!-- 	 <column name="nasId" type="String"  primary="true"></column> -->
+		 <column name="ASSOCIATE_NUMBER" type="String"  primary="true" ></column>
+		 <column name="ASSOC_NO" type="String"  />
+		 <column name="ASSOCIATE_DATE_OF_HIRE" type="String" />
+         <column name="ASSOCIATE_NAME" type="String" />
+         <column name="DEPT_NUMBER" type="String" />
+         <column name="DEPT_NO" type="int" />
+         <column name="DEPT_NAME" type="String" />
+         <column name="ASSOCIATE_TITLE" type="String" />
+         <column name="SHIFT_CODE" type="String" />
+         <column name="TEAM_NUMBER" type="String" />
+         <column name="EFFDT" type="String" />
+         <column name="TERMINATION_DT" type="String" />
+         <column name="MANAGER_ASSOCIATE_NUMBER" type="int" />
+         <column name="ASSGN_TYPE" type="String" />
+         <column name="LEADERSHIP_ASSIGNMENT" type="String" />
+         <column name="EMAIL" type="String" />
+          <column name="deleteflag" type="int"></column>
+		 <column name="createdBy" type="String" />
+		 <column name="createDate" type="Date" />
+		 <column name="modifiedBy" type="String" />
+		<column name="modifiedDate" type="Date" />
+		
+		<finder name="naSupport" return-type="WFMS_NA_Support">
+            <finder-column name="ASSOCIATE_NUMBER" />
+        </finder>
+		
+	 </entity>
+</service-builder>

@@ -1,0 +1,9 @@
+Bundle-Name: WorkFlowService-api
+Bundle-SymbolicName: com.astra.workflowservice.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.astra.workflowservice.exception,\
+	com.astra.workflowservice.model,\
+	com.astra.workflowservice.service,\
+	com.astra.workflowservice.service.persistence
+-includeresource: META-INF/service.xml=../WorkFlowService-service/service.xml

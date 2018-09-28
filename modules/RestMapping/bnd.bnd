@@ -1,0 +1,4 @@
+Bundle-Name: RestMapping
+Bundle-SymbolicName: com.rest.mapping
+Bundle-Version: 1.0.0
+Liferay-Configuration-Path: /configuration

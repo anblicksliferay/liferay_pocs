@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation=" http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean class="com.servicemapping.service.impl.courseLocalServiceImpl" id="com.servicemapping.service.courseLocalService" />
+	<bean class="com.servicemapping.service.impl.courseServiceImpl" id="com.servicemapping.service.courseService" />
+	<bean class="com.servicemapping.service.persistence.impl.coursePersistenceImpl" id="com.servicemapping.service.persistence.coursePersistence" parent="basePersistence" />
+	<bean class="com.servicemapping.service.impl.locationLocalServiceImpl" id="com.servicemapping.service.locationLocalService" />
+	<bean class="com.servicemapping.service.impl.locationServiceImpl" id="com.servicemapping.service.locationService" />
+	<bean class="com.servicemapping.service.persistence.impl.locationPersistenceImpl" id="com.servicemapping.service.persistence.locationPersistence" parent="basePersistence" />
+	<bean class="com.servicemapping.service.impl.registrationDetailsLocalServiceImpl" id="com.servicemapping.service.registrationDetailsLocalService" />
+	<bean class="com.servicemapping.service.impl.registrationDetailsServiceImpl" id="com.servicemapping.service.registrationDetailsService" />
+	<bean class="com.servicemapping.service.persistence.impl.registrationDetailsPersistenceImpl" id="com.servicemapping.service.persistence.registrationDetailsPersistence" parent="basePersistence" />
+</beans>
