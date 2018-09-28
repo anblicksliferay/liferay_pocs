@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.0.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_0_0.dtd">
+
+<service-builder package-path="com.ddt">
+	<namespace>WDDTS</namespace>
+	<!--<entity data-source="sampleDataSource" local-service="true" name="Foo" remote-service="false" session-factory="sampleSessionFactory" table="foo" tx-manager="sampleTransactionManager uuid="true"">-->
+	<entity local-service="true" name="Loc_Course_Info" remote-service="true" uuid="true">
+
+		<!-- PK fields -->
+
+		<column name="id" primary="true" type="long" />
+
+		<!-- Group instance -->
+
+	<column name="locationId" type="long" />
+	<column name="couserId" type="long" />
+	<column name="locationName" type="String" />
+	<column name="couserName" type="String" />
+	<column name="maxSeats" type="long" />
+	<column name="toDate" type="Date" />
+	<column name="fromDate" type="Date" />
+	        <column name="Fees" type="long" />
+		<!-- Audit fields -->
+        <column name="companyId" type="long" />
+		<column name="userId" type="long" />
+		<column name="userName" type="String" />
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+	</entity>
+	
+	<entity local-service="true" name="NewsAshok" remote-service="true" uuid="true">
+		<column name="id" primary="true" type="long" />
+		<column name="Newscontent" type="String" />
+	</entity>
+	<entity local-service="true" name="TestimonialAshok" remote-service="true" uuid="true">
+		<column name="id" primary="true" type="long" />
+		<column name="TestimonialContent" type="String" />
+	</entity>
+	<entity local-service="true" name="FAQSAshok" remote-service="true" uuid="true">
+		<column name="id" primary="true" type="long" />
+		<column name="FAQSContent" type="String" />
+	</entity>
+</service-builder>

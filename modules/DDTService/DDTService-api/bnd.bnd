@@ -1,0 +1,9 @@
+Bundle-Name: DDTService-api
+Bundle-SymbolicName: ddtservice.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	ddtservice.exception,\
+	ddtservice.model,\
+	ddtservice.service,\
+	ddtservice.service.persistence
+-includeresource: META-INF/service.xml=../DDTService-service/service.xml

@@ -1,0 +1,140 @@
+#portlet_com_delphi_userprofile_portlet_DelphiUserProfileAdminPortlet .wrapper {
+  margin-bottom: 5px; }
+  #portlet_com_delphi_userprofile_portlet_DelphiUserProfileAdminPortlet .wrapper .header, #portlet_com_delphi_userprofile_portlet_DelphiUserProfileAdminPortlet .wrapper .headerStatic {
+    cursor: pointer;
+    border: 1px solid #ccc; }
+    #portlet_com_delphi_userprofile_portlet_DelphiUserProfileAdminPortlet .wrapper .header h2, #portlet_com_delphi_userprofile_portlet_DelphiUserProfileAdminPortlet .wrapper .headerStatic h2 {
+      margin: 10px 0; }
+    #portlet_com_delphi_userprofile_portlet_DelphiUserProfileAdminPortlet .wrapper .header i.fa-caret-down, #portlet_com_delphi_userprofile_portlet_DelphiUserProfileAdminPortlet .wrapper .headerStatic i.fa-caret-down {
+      position: absolute;
+      top: 5px;
+      right: 15px;
+      margin-left: 10px;
+      font-size: 1.5em;
+      -moz-transition: all .5s linear;
+      -webkit-transition: all .5s linear;
+      transition: all .5s linear; }
+    #portlet_com_delphi_userprofile_portlet_DelphiUserProfileAdminPortlet .wrapper .header i.fa.fa-caret-down.rotate, #portlet_com_delphi_userprofile_portlet_DelphiUserProfileAdminPortlet .wrapper .headerStatic i.fa.fa-caret-down.rotate {
+      -moz-transform: rotate(-180deg);
+      -webkit-transform: rotate(-180deg);
+      transform: rotate(-180deg); }
+
+#portlet_com_delphi_userprofile_portlet_DelphiUserProfileAdminPortlet .form-group {
+  float: right; }
+
+#portlet_com_delphi_userprofile_portlet_DelphiUserProfileAdminPortlet html .form-control:focus {
+  border-color: transparent; }
+
+#portlet_com_delphi_userprofile_portlet_DelphiUserProfileAdminPortlet textarea#textBox.text-box-1 {
+  background-color: #8bd;
+  color: #fff; }
+  #portlet_com_delphi_userprofile_portlet_DelphiUserProfileAdminPortlet textarea#textBox.text-box-1:focus {
+    border-color: transparent !important; }
+  #portlet_com_delphi_userprofile_portlet_DelphiUserProfileAdminPortlet textarea#textBox.text-box-1::placeholder {
+    color: #fff; }
+
+#portlet_com_delphi_userprofile_portlet_DelphiUserProfileAdminPortlet .content {
+  margin: 0px;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-radius: 0 0 5px 5px; }
+
+#portlet_com_delphi_userprofile_portlet_DelphiUserProfileAdminPortlet i.fa-id-badge {
+  font-size: 2.5em;
+  vertical-align: top; }
+
+#portlet_com_delphi_userprofile_portlet_DelphiUserProfileAdminPortlet .requests-card {
+  background-color: #fff;
+  width: 32%;
+  padding: 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin: 0 7px 10px 0; }
+
+#portlet_com_delphi_userprofile_portlet_DelphiUserProfileAdminPortlet .alert-messages {
+  float: left;
+  margin-bottom: 20px; }
+
+#portlet_com_delphi_userprofile_portlet_DelphiUserProfileAdminPortlet .send-message-note {
+  background-color: #fff;
+  max-width: 52%;
+  padding: 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  float: right; }
+
+#portlet_com_delphi_userprofile_portlet_DelphiUserProfileAdminPortlet .requests-card-badge {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 20px;
+  padding-right: 10px;
+  padding: 20px 10px 10px 0; }
+
+#portlet_com_delphi_userprofile_portlet_DelphiUserProfileAdminPortlet .requests-card-info {
+  display: inline-block; }
+
+#portlet_com_delphi_userprofile_portlet_DelphiUserProfileAdminPortlet .userlistGrid {
+  background-color: #f2f2f2; }
+  #portlet_com_delphi_userprofile_portlet_DelphiUserProfileAdminPortlet .userlistGrid td {
+    cursor: pointer; }
+
+#portlet_com_delphi_userprofile_portlet_DelphiUserProfileAdminPortlet .dataTables_scroll {
+  background-color: #f2f2f2; }
+
+#portlet_com_delphi_userprofile_portlet_DelphiUserProfileAdminPortlet .underLine {
+  text-decoration: underline; }
+
+#portlet_com_delphi_userprofile_portlet_DelphiUserProfileAdminPortlet .dataTables_wrapper {
+  width: 400px;
+  background-color: #f2f2f2; }
+  #portlet_com_delphi_userprofile_portlet_DelphiUserProfileAdminPortlet .dataTables_wrapper .dataTables_filter {
+    padding: 5px 15px;
+    float: left; }
+
+#portlet_com_delphi_userprofile_portlet_DelphiUserProfileAdminPortlet .dataTables_wrapper table.dataTable thead th, #portlet_com_delphi_userprofile_portlet_DelphiUserProfileAdminPortlet .dataTables_wrapper table.dataTable thead td {
+  border: none; }
+
+#portlet_com_delphi_userprofile_portlet_DelphiUserProfileAdminPortlet #charNum {
+  margin-bottom: 20px; }
+
+#portlet_com_delphi_userprofile_portlet_DelphiUserProfileAdminPortlet .admin-color-picker {
+  vertical-align: top;
+  border-radius: 6px;
+  position: relative;
+  margin-bottom: 5px; }
+  #portlet_com_delphi_userprofile_portlet_DelphiUserProfileAdminPortlet .admin-color-picker.send-message-note {
+    max-width: 66%; }
+  #portlet_com_delphi_userprofile_portlet_DelphiUserProfileAdminPortlet .admin-color-picker .mfg-admin-alert {
+    cursor: pointer;
+    color: #333;
+    min-width: 22px;
+    height: 22px;
+    display: inline-block;
+    text-align: center;
+    -webkit-border-radius: 10px;
+    border-radius: 11px;
+    padding: 2px 3px;
+    margin: 5px; }
+    #portlet_com_delphi_userprofile_portlet_DelphiUserProfileAdminPortlet .admin-color-picker .mfg-admin-alert.crit {
+      background-color: #C77; }
+    #portlet_com_delphi_userprofile_portlet_DelphiUserProfileAdminPortlet .admin-color-picker .mfg-admin-alert.warn {
+      background-color: #Fb7; }
+    #portlet_com_delphi_userprofile_portlet_DelphiUserProfileAdminPortlet .admin-color-picker .mfg-admin-alert.info {
+      background-color: #8bd; }
+
+@media (max-width: 768px) {
+  #portlet_com_delphi_userprofile_portlet_DelphiUserProfileAdminPortlet .wrapper .header h2, #portlet_com_delphi_userprofile_portlet_DelphiUserProfileAdminPortlet .wrapper .headerStatic h2 {
+    padding-left: 15px;
+    padding-right: 15px; }
+  #portlet_com_delphi_userprofile_portlet_DelphiUserProfileAdminPortlet .requests-card {
+    width: 100%; }
+  #portlet_com_delphi_userprofile_portlet_DelphiUserProfileAdminPortlet .send-message-note {
+    max-width: 100%;
+    float: none;
+    margin-bottom: 10px; }
+  #portlet_com_delphi_userprofile_portlet_DelphiUserProfileAdminPortlet .alert-messages {
+    margin-bottom: 10px; }
+  #portlet_com_delphi_userprofile_portlet_DelphiUserProfileAdminPortlet button.admin-send-msg {
+    margin-bottom: 10px; } }

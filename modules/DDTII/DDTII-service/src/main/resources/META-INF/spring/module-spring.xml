@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation=" http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean class="ddtii.service.impl.categoryLocalServiceImpl" id="ddtii.service.categoryLocalService" />
+	<bean class="ddtii.service.impl.categoryServiceImpl" id="ddtii.service.categoryService" />
+	<bean class="ddtii.service.persistence.impl.categoryPersistenceImpl" id="ddtii.service.persistence.categoryPersistence" parent="basePersistence" />
+	<bean class="ddtii.service.impl.courseLocalServiceImpl" id="ddtii.service.courseLocalService" />
+	<bean class="ddtii.service.impl.courseServiceImpl" id="ddtii.service.courseService" />
+	<bean class="ddtii.service.persistence.impl.coursePersistenceImpl" id="ddtii.service.persistence.coursePersistence" parent="basePersistence" />
+	<bean class="ddtii.service.impl.loc_cou_catLocalServiceImpl" id="ddtii.service.loc_cou_catLocalService" />
+	<bean class="ddtii.service.impl.loc_cou_catServiceImpl" id="ddtii.service.loc_cou_catService" />
+	<bean class="ddtii.service.persistence.impl.loc_cou_catPersistenceImpl" id="ddtii.service.persistence.loc_cou_catPersistence" parent="basePersistence" />
+	<bean class="ddtii.service.impl.locationLocalServiceImpl" id="ddtii.service.locationLocalService" />
+	<bean class="ddtii.service.impl.locationServiceImpl" id="ddtii.service.locationService" />
+	<bean class="ddtii.service.persistence.impl.locationPersistenceImpl" id="ddtii.service.persistence.locationPersistence" parent="basePersistence" />
+</beans>

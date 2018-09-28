@@ -1,0 +1,9 @@
+Bundle-Name: DDTII-api
+Bundle-SymbolicName: ddtii.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	ddtii.exception,\
+	ddtii.model,\
+	ddtii.service,\
+	ddtii.service.persistence
+-includeresource: META-INF/service.xml=../DDTII-service/service.xml

@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.0.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_0_0.dtd">
+
+<service-builder package-path="ddtii">
+	<namespace>DDTII</namespace>
+	<!--<entity data-source="sampleDataSource" local-service="true" name="Foo" remote-service="false" session-factory="sampleSessionFactory" table="foo" tx-manager="sampleTransactionManager uuid="true"">-->
+	<entity local-service="true" name="location" remote-service="true" >
+		<!-- PK fields -->
+		<column name="locationId" primary="true" type="long" />
+		<!-- Group instance -->
+         <column name="locationName" type="String" />
+		<!-- Audit fields -->
+		<column name="companyId" type="long" />
+		<column name="userId" type="long" />
+		<column name="userName" type="String" />
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+	</entity>
+	
+		<entity local-service="true" name="course" remote-service="true">
+		<!-- PK fields -->
+		<column name="courseId" primary="true" type="long" />
+		<!-- Group instance -->
+         <column name="courseName" type="String" />
+         <column name="locationId"  type="long" />
+		<!-- Audit fields -->
+		<column name="companyId" type="long" />
+		<column name="userId" type="long" />
+		<column name="userName" type="String" />
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+	</entity>
+	
+	<entity local-service="true" name="category" remote-service="true">
+		<!-- PK fields -->
+		<column name="categoryId" primary="true" type="long" />
+		<!-- Group instance -->
+         <column name="categoryName" type="String" />
+         <column name="courseId" type="long" />
+         <column name="locationId"  type="long" />
+		<!-- Audit fields -->
+		<column name="companyId" type="long" />
+		<column name="userId" type="long" />
+		<column name="userName" type="String" />
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+	</entity>
+	
+	<entity local-service="true" name="loc_cou_cat" remote-service="true" >
+		<!-- PK fields -->
+		<column name="loc_cou_catId" primary="true" type="long" />
+		<!-- Group instance -->
+         <column name="categoryId" type="long" />
+         <column name="courseId" type="long" />
+         <column name="locationId"  type="long" />
+          <column name="durationString" type="String"></column>
+         <column name="durationLong" type="long"></column>
+         <column name="startDate_" type="Date"></column>
+         <column name="endDate_" type="Date"></column>
+         <column name="maxSeats" type="long"></column>
+		<!-- Audit fields -->
+		<column name="companyId" type="long" />
+		<column name="userId" type="long" />
+		<column name="userName" type="String" />
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+	</entity>
+	
+	
+</service-builder>

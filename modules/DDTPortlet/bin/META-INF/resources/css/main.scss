@@ -1,0 +1,107 @@
+ #portlet_com_delphi_userprofile_portlet_DelphiUserProfilePortlet{
+	.wrapper{
+		margin-bottom:5px;
+		
+		.header, .headerStatic{
+			cursor:pointer;
+			border:1px solid #ccc;
+			h2{
+				margin: 10px 0;
+			}
+			
+			i.fa-caret-down {
+				position: absolute;
+				top: 5px;
+				right: 15px;
+				margin-left: 10px;
+				font-size: 1.5em;
+				-moz-transition: all .5s linear;
+	    		-webkit-transition: all .5s linear;
+	    		transition: all .5s linear;
+			}
+			i.fa.fa-caret-down.rotate {
+			    -moz-transform: rotate(-180deg);
+			    -webkit-transform: rotate(-180deg);
+			    transform: rotate(-180deg);
+			}
+		}
+		.is-datepick {
+	    	border: 1px solid #ccc;
+	        border-top-color: rgb(204, 204, 204);
+	        border-right-color: rgb(204, 204, 204);
+	        border-bottom-color: rgb(204, 204, 204);
+	        border-left-color: rgb(204, 204, 204);
+		    background-image: url(/o/delphifinancials/images/calendar.gif);
+		    background-position: 97% center;
+		    background-repeat: no-repeat;
+		    background-color: #fff !important;
+		    cursor: pointer;
+		}
+		.content{
+			margin:0px;
+			padding:10px;
+			background-color:#f2f2f2;
+			border-radius: 0 0 5px 5px;
+			.detailItem{
+				border-bottom: 1px solid #ccc;
+				margin-bottom: 3px;
+				padding-bottom: 3px;
+			}
+			input[type='text']{
+    			text-align: center;		
+			}
+			input[type='checkbox']{
+				font-size:2em;
+				margin-top: 5px;
+			}
+			input[disabled='disabled']{
+				color: #ccc;
+   				background-color: #f2f2f2;
+			}
+			.grey{
+				background-color: #eaeaea;
+				border-radius: 6px;
+				padding: 10px;
+			}
+			.whitebox{
+				background-color: #fff;
+			    border-radius: 6px;
+			    padding: 10px;
+			    border: 1px solid #ccc;
+		    }
+			.bold{
+				font-weight:bold;
+			}
+			i.fa {
+				font-size: 1.3em;
+			    top: 2px;
+   				position: relative;
+   				
+				&.active{
+					cursor: pointer;
+				}
+				
+			}
+		}
+	}
+	@media (max-width: 768px) {
+		.wrapper {
+			.header, .headerStatic {
+				h2 {
+					padding-left: 15px;
+					padding-right: 15px;
+				}
+			}
+			.content{
+				.whitebox {
+					width: 100%;
+				}
+			}
+			.row{
+				h3, h4 {
+					font-size: 9px;
+				}
+			}
+		}
+	}
+} 

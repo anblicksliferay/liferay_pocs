@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation=" http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean class="com.ddt.service.impl.FAQSAshokLocalServiceImpl" id="com.ddt.service.FAQSAshokLocalService" />
+	<bean class="com.ddt.service.impl.FAQSAshokServiceImpl" id="com.ddt.service.FAQSAshokService" />
+	<bean class="com.ddt.service.persistence.impl.FAQSAshokPersistenceImpl" id="com.ddt.service.persistence.FAQSAshokPersistence" parent="basePersistence" />
+	<bean class="com.ddt.service.impl.Loc_Course_InfoLocalServiceImpl" id="com.ddt.service.Loc_Course_InfoLocalService" />
+	<bean class="com.ddt.service.impl.Loc_Course_InfoServiceImpl" id="com.ddt.service.Loc_Course_InfoService" />
+	<bean class="com.ddt.service.persistence.impl.Loc_Course_InfoPersistenceImpl" id="com.ddt.service.persistence.Loc_Course_InfoPersistence" parent="basePersistence" />
+	<bean class="com.ddt.service.impl.NewsAshokLocalServiceImpl" id="com.ddt.service.NewsAshokLocalService" />
+	<bean class="com.ddt.service.impl.NewsAshokServiceImpl" id="com.ddt.service.NewsAshokService" />
+	<bean class="com.ddt.service.persistence.impl.NewsAshokPersistenceImpl" id="com.ddt.service.persistence.NewsAshokPersistence" parent="basePersistence" />
+	<bean class="com.ddt.service.impl.TestimonialAshokLocalServiceImpl" id="com.ddt.service.TestimonialAshokLocalService" />
+	<bean class="com.ddt.service.impl.TestimonialAshokServiceImpl" id="com.ddt.service.TestimonialAshokService" />
+	<bean class="com.ddt.service.persistence.impl.TestimonialAshokPersistenceImpl" id="com.ddt.service.persistence.TestimonialAshokPersistence" parent="basePersistence" />
+</beans>

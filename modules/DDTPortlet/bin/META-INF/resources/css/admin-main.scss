@@ -1,0 +1,173 @@
+ #portlet_com_delphi_userprofile_portlet_DelphiUserProfileAdminPortlet{
+	.wrapper{
+		margin-bottom:5px;
+		
+		.header, .headerStatic{
+			cursor:pointer;
+			border:1px solid #ccc;
+			h2{
+				margin: 10px 0;
+			}
+			
+			i.fa-caret-down {
+				position: absolute;
+				top: 5px;
+				right: 15px;
+				margin-left: 10px;
+				font-size: 1.5em;
+				-moz-transition: all .5s linear;
+	    		-webkit-transition: all .5s linear;
+	    		transition: all .5s linear;
+			}
+			i.fa.fa-caret-down.rotate {
+			    -moz-transform: rotate(-180deg);
+			    -webkit-transform: rotate(-180deg);
+			    transform: rotate(-180deg);
+			}
+		}
+	}
+	.form-group {
+		float: right;
+	}
+	html .form-control:focus {
+		border-color: transparent;
+	}
+	textarea#textBox.text-box-1 {
+		background-color: #8bd;
+		color: #fff;
+		&:focus {
+			border-color: transparent!important;
+		}
+		&::placeholder {
+	    	color: #fff;
+		}
+	}
+	
+	.content {
+	    margin: 0px;
+    	padding: 10px;
+    	background-color: #f2f2f2;
+    	border-radius: 0 0 5px 5px;
+	}
+	i.fa-id-badge {
+		font-size: 2.5em;
+		vertical-align: top;
+	}
+	.requests-card {
+		background-color: #fff;
+    	width: 32%;
+    	padding: 10px;
+    	display: inline-block;
+    	border: 1px solid #ccc;
+    	border-radius: 6px;
+    	margin: 0 7px 10px 0;
+	}
+	.alert-messages {
+		float: left;
+		margin-bottom: 20px;
+	}
+	.send-message-note {
+		background-color: #fff;
+	    max-width: 52%;
+	    padding: 10px;
+	    display: inline-block;
+	    border: 1px solid #ccc;
+	    border-radius: 6px;
+	    float: right;
+	}
+	.requests-card-badge {
+		display: inline-block;
+		vertical-align: top;
+		padding-top: 20px;
+		padding-right: 10px;
+		padding: 20px 10px 10px 0;
+	}
+	.requests-card-info {
+		display: inline-block;
+	}
+	.userlistGrid {
+		background-color: #f2f2f2;
+		td {
+			cursor:pointer;
+		}
+	}
+	.dataTables_scroll {
+		background-color: #f2f2f2;
+	}
+	.underLine {
+		text-decoration: underline;
+	}
+	
+	.dataTables_wrapper {
+	    width: 400px;
+	    background-color: #f2f2f2;
+		.dataTables_filter{
+			padding: 5px 15px;
+    		float: left;
+		}    
+	}
+	
+	.dataTables_wrapper table.dataTable thead th, .dataTables_wrapper table.dataTable thead td {
+	    border: none;
+	}
+	
+	#charNum {
+		margin-bottom: 20px;
+	}
+	
+	.admin-color-picker {    
+	    vertical-align: top;
+    	border-radius: 6px;
+	    position: relative;
+	    margin-bottom: 5px;
+	    &.send-message-note {
+	    	max-width: 66%;
+	    }
+		.mfg-admin-alert {	
+			cursor: pointer;
+		    color: #333;
+		    min-width: 22px;
+		    height: 22px;
+		    display: inline-block;
+		    text-align: center;
+		    -webkit-border-radius: 10px;
+		    border-radius: 11px;
+	    	padding: 2px 3px;
+		    margin: 5px;
+		    &.crit{
+		    	background-color: #C77;
+		    }
+		    &.warn{ 
+		    	background-color: #Fb7;
+		    }
+		    &.info{ 
+		    	background-color: #8bd;
+		    }
+		}
+	}
+	
+	@media (max-width: 768px) {
+		.wrapper {
+			.header, .headerStatic {
+				h2 {
+					padding-left: 15px;
+					padding-right: 15px;
+				}
+			}
+		}
+		.requests-card {
+			width: 100%;
+		}
+		.send-message-note {
+			max-width: 100%;
+			float: none;
+			margin-bottom: 10px;
+		}
+		.alert-messages {
+			margin-bottom: 10px;
+		}
+		button.admin-send-msg {
+			margin-bottom: 10px;
+		}
+	}
+} 
