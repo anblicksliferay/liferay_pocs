@@ -1,0 +1,10 @@
+{
+  "LiferayTheme": {
+    "appServerPath": "/Users/wesk/servers/liferay-dxp-digital-enterprise-7.0-sp6/tomcat-8.0.32",
+    "deployPath": "/Users/wesk/servers/liferay-dxp-digital-enterprise-7.0-sp6/deploy",
+    "url": "http://localhost:8080",
+    "appServerPathPlugin": "/Users/wesk/servers/liferay-dxp-digital-enterprise-7.0-sp6/tomcat-8.0.32/webapps/delphi-mfg-theme",
+    "deployed": true,
+    "pluginName": "delphi-mfg-theme"
+  }
+}

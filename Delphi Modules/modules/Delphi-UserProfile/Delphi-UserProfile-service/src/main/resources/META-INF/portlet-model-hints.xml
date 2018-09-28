@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.delphi.userprofile.model.AdminTasks">
+		<field name="uuid" type="String" />
+		<field name="adminTaskId" type="long" />
+		<field name="userId" type="long" />
+		<field name="systemAlert" type="boolean" />
+		<field name="messageText" type="String" />
+		<field name="postOnPortBanner" type="boolean" />
+		<field name="siteAlert" type="boolean" />
+		<field name="siteName" type="String" />
+		<field name="companyId" type="long" />
+		<field name="createdById" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.delphi.userprofile.model.UserAccessRequest">
+		<field name="uuid" type="String" />
+		<field name="requestId" type="long" />
+		<field name="userId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="createdById" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="portletAccess" type="String" />
+		<field name="requestType" type="String" />
+		<field name="responseType" type="String" />
+		<field name="responseComment" type="String" />
+		<field name="responseUser" type="long" />
+		<field name="activeState" type="int" />
+	</model>
+	<model name="com.delphi.userprofile.model.UserProfile">
+		<field name="uuid" type="String" />
+		<field name="profileId" type="long" />
+		<field name="userId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="createdById" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="communicationPreferences" type="String">
+			<hint name="max-length">500</hint>
+		</field>
+		<field name="region" type="String" />
+		<field name="site" type="String" />
+		<field name="server" type="String" />
+		<field name="division" type="String" />
+		<field name="language" type="String" />
+		<field name="timezone" type="String" />
+		<field name="workHours" type="String">
+			<hint name="max-length">500</hint>
+		</field>
+		<field name="jobrole" type="String">
+			<hint name="max-length">500</hint>
+		</field>
+		<field name="interests" type="String">
+			<hint name="max-length">500</hint>
+		</field>
+		<field name="portlets" type="String">
+			<hint name="max-length">500</hint>
+		</field>
+	</model>
+</model-hints>

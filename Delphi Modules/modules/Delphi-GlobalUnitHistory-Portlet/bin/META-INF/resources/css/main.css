@@ -1,0 +1,525 @@
+.aui .ui-dialog.ui-widget.ui-widget-content{
+	z-index:2000;
+}
+.aui  .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+     float: none;
+}
+.aui .ui-widget-header .ui-dialog-title{
+    text-transform: none;    
+}
+
+.aui input, .aui textarea, .aui .uneditable-input {
+    width: 100%;
+} 
+
+.aui .select-info {
+	margin-left: 15px;
+	display: inline-block;
+}
+.ui-dialog-buttonpane .ui-dialog-buttonset .ui-button:first-child {
+	    float: right;
+    margin-right: 0;
+}
+
+.red {
+	color: #a12a2a;
+}
+
+.aui #tableheader{
+	table td{
+		border:none;
+		h6{
+		    font-size: 10px;
+		    line-height: 0;
+		    margin: 0px 0px 5px 0px;
+		    text-decoration: underline;
+		    cursor: pointer;
+		}
+		input{		
+		    width: 100%;
+		    padding: 0;
+    		text-align: center;
+		}	
+		&.grey10{
+			background: #f2f2f2;
+		}
+		&.grey9{
+			background: #e8e8e8;
+		}
+		&.grey8{
+			background: #e2e2e2;
+		}
+		&.grey7{
+			background: #d2d2d2;
+		}
+		&.grey6{
+			background: #c6c6c6;
+		}
+		&.grey5{
+			background: #b8b8b8;
+		}
+		&.grey5{
+			background: #a7a7a7;
+		}
+		&.bordered{
+			border: 1px solid #b1b1b1; 
+		}
+		&.tabarea{
+			padding:0;
+			border-right: 0;
+		    border-left: 0;
+		    border-top: 0;
+		    background: none;
+		}
+			
+		.tabarea {
+			padding: 0;
+			border-right: 0;
+			border-left: 0;
+			border-top: 0;
+			background: none;
+		}
+		
+		/* Style the list */
+		ul.tab {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background: none;
+		}
+		
+		/* Float the list items side by side */
+		ul.tab li {
+			float: left;
+			line-height: 7px;
+			margin-right: 1px;
+		}
+		
+		/* Style the links inside the list items */
+		ul.tab li a {
+			display: inline-block;
+			color: black;
+			text-align: center;
+			text-decoration: none;
+			transition: 0.3s;
+			border-radius: 10px 10px 0px 0px;
+			border: 1px solid #b1b1b1;
+			border-bottom: 0;
+			font-size: .8em;
+			padding: 5px 10px;
+		}
+		
+		/* Change background color of links on hover */
+		ul.tab li a:hover {background-color: #ddd;}
+		
+		/* Create an active/current tablink class */
+		ul.tab li a:focus, .active {background-color: #e2e2e2;}
+		
+		@-webkit-keyframes fadeEffect {
+		    from {opacity: 0;}
+		    to {opacity: 1;}
+		}
+		
+		@keyframes fadeEffect {
+		    from {opacity: 0;}
+		    to {opacity: 1;}
+		}
+	}
+}
+
+#tableheader .mysubscription-controls-container {
+	display: inline-block;
+	width: 300px;
+}
+
+#viewGUHTable{
+	.editControl, .deleteControl{
+		cursor:pointer;
+	}
+}
+
+.cycletimeadmin-controls form div{
+
+	input,select{	
+	    float: left;
+	    margin-left: 10px;
+    }
+    select{
+        width: 140px;
+    }
+    input{
+        width: 40px;
+    }
+    label{
+		float: left;
+    	width: 60px;
+	    text-align: right;
+    }
+    .working-days{
+    	font-size:1.1em;
+    }
+    &>span{
+	    text-align: left;
+	    float: left;
+	    font-weight: bold;
+	    font-style: italic;
+	    margin-left: 70px;
+    }
+    &:after {
+	    content: '';
+	    display: block;
+	    clear: both;
+	}
+}
+
+#message { font-size: 0.9em;  color: #1eb32c;   }
+
+#tablecontent,#tableheader{
+		
+	text-align:center;
+		
+	a:hover { }
+	.hidden {  display: none; }
+	.white  {  color: #ffffff;}
+	.col, .left 	{  float: left; }
+	.right 	{  float: right; }
+	.clear 	{ clear: both; }
+	.green { color: #9fff01  }
+	.red { color: #ff7868 }
+	.big { font-size: 3em; margin: 5px 0px; }
+	pre { border: 1px solid #313131; background-color: rgba(255,255,255,0.2); padding: 5px  }
+	
+	
+	.btn {
+	  border: none;
+	  font-family: inherit;
+	  font-size: inherit;
+	  color: inherit;
+	  background: none;
+	  cursor: pointer;
+	  padding: 20px 70px;
+	  display: inline-block;
+	  margin: 15px 30px;
+	  text-transform: uppercase;
+	  letter-spacing: 1px;
+	  font-weight: 300;
+	  outline: none;
+	  position: relative;
+	  -webkit-transition: all 0.3s;
+	  -moz-transition: all 0.3s;
+	  transition: all 0.3s;
+	  text-decoration: none;
+	
+	  color: #fff;
+	  overflow: hidden;
+	  background-color: rgba(0,0,0,0.3);
+	}
+	
+	/* all */
+	::-webkit-input-placeholder { color:#555555; font-weight: 300;  }
+	::-moz-placeholder { color:#555555; font-weight: 300 } /* firefox 19+ */
+	:-ms-input-placeholder { color:#555555; font-weight: 300 } /* ie */
+	input:-moz-placeholder { color:#555555;font-weight: 300  }
+	
+	#footer { position: relative; background-color: #313131; text-align: center; padding: 10px 0px;}
+	#footer a { color: #d1d1d1; margin: 0 10px  }
+	
+	table { width: 100%; }
+	table td {    
+	  padding: 2px;
+   	  
+   	 /* width: 9.105%; Throws off the filter widths */
+	}      
+	table td i { margin: 0px 5px; color: #636363 }
+	table th {
+		background: #636363;   
+		border: 1px solid #b1b1b1;  
+		text-transform: uppercase;
+		font-size: 0.9em;
+		font-weight: 300;
+		padding: 6px;
+		color: #fff;
+		text-align:center;
+	}  
+	table th a {
+	  color: #fff;
+	  
+	}
+	table td {
+		border: 1px solid #b1b1b1;
+	}  
+	
+	#toggle { position: fixed; left: 0; padding: 10px; z-index: 10000; cursor: pointer; }
+	#toggle i { color: #fff;  font-size: 1.5em; }
+
+}
+.aui table#productProcessTable,
+.aui table#selectedSubscriptions {
+	tbody tr{
+		cursor:pointer;
+	
+		&.selected {
+		    background-color: #B0BED9;
+		    color:#333;
+		    td {
+		    	background-color:transparent;
+		    }
+		}
+		
+		&:hover {
+		    background-color: #B6C4DF;
+		    color:#444;
+		}
+	}
+}
+
+.aui .no-close {
+    background: transparent !important;
+    border: 1px solid transparent !important; 
+}
+.aui .no-close .ui-dialog-titlebar {
+  display: none ;
+}
+.aui .no-close .ui-dialog-content {
+      height: auto !important;
+}
+
+tfoot input {
+        width: 100%;
+        padding: 3px;
+        box-sizing: border-box;
+    }
+tfoot {
+    display: table-header-group;
+}
+
+/* Added by Deanna */
+/*html.aui select {
+	margin-bottom: 0;
+}*/
+.aui {
+	.dataTables_wrapper .dataTables_filter input {
+		margin-left: 0;
+	}
+	.table {
+		.textCenter {
+			text-align: center;
+		}
+	}
+	.textCenter {
+		text-align: center;
+	}
+	.delphiHeader {
+		margin-bottom: 20px;
+	}
+	.subscriptionsAddWrapper {
+    	overflow: hidden;
+		a {
+			float: right;
+			margin-top: 20px;
+			position: relative;
+    		z-index: 150;
+		}
+	}
+	#viewGUHTable_filter,
+	#selectedSubscriptions_filter {
+		text-align: left;
+		label {
+			float: right;
+		}
+	}
+	#selectedSubscriptions_length,
+	#viewGUHTable_length {
+		select {
+			margin-bottom: 0;
+		}
+	}
+	#viewGUHTable .editControl, 
+	#viewGUHTable .deleteControl {
+		text-align: center;
+	}
+	table.dataTable.no-footer {
+		border-bottom: none;
+	}
+	#moveRows {
+		td {
+	    	text-align: center;
+	    	i {
+	    		color: #1ab394;
+	    		font-size: 1.5em;
+	    		vertical-align: middle;
+	    	}
+		}
+	}
+	#productProcessTable_wrapper {
+		background-color: #f9f9f9;
+		padding-bottom: 0;
+	}
+	#productProcessTable {
+		margin-bottom: 0;
+	}
+	#productProcessTable_info {
+		border-left: 2px solid #EBEBEB;
+		padding: 10px 0 8px 10px;
+	}	
+	#productProcessTable_paginate {
+		border-right: 2px solid #EBEBEB;
+	}
+	.addRemoveButtons {
+		border-right: 2px solid #ebebeb;
+		border-bottom: 2px solid #EBEBEB;
+		border-left: 2px solid #ebebeb;
+		margin-bottom: 50px;
+		background-color: #f9f9f9;
+		.addSubscription,
+		.removeSubscription {
+			width: 49%;
+			display: inline-block;
+			text-align: center;
+			margin: 10px 0 20px 0;
+    		background-color: #f9f9f9;
+		}
+		.subscriptionButtonWrapper {
+			background-color: #1ab394;
+		    border-radius: 2px;
+	    	color: white;
+	    	width: 50%;
+    		margin: 0 auto;
+		}
+	}
+	.subscriptionAlertsForm {
+		.name, 
+		.type {
+			vertical-align: top;
+		}
+	}
+	#productProcessTableError {
+		
+	}
+	.returnError {
+		border: 1px solid #ed5565;
+	}
+	.subscriptionAlertsThresholds {
+		.info,
+		.warning,
+		.critical {
+			width: 15px;
+		    height: 15px;
+		    display: inline-block;
+		    border-radius: 25px;
+		    vertical-align: top;
+    		margin-right: 5px;
+		}
+		.info {
+			background-color: #5b8cb9;
+		}
+		.warning {
+			background-color: #cb7f36;
+		}
+		.critical {
+			background-color: #a12a2a;	
+		}
+		.btn-secondary {
+			background: #adadad;
+		}
+	}
+}
+.saveCancelButtons {
+	.required {
+		font-size: 1.1em;
+	    display: inline-block;
+	    margin-right: 20px;
+	    font-weight: bold;
+	}
+}
+
+@media (max-width: 767px) { 
+	.aui .subscriptionsAddWrapper a {
+		margin-top: 0;
+	}
+	.aui #selectedSubscriptions_filter label, .aui #viewGUHTable_filter label {
+		width: 100%;
+	}
+}
+    
+
+@media (min-width: 768px) {
+	.subscriptionsAddWrapper {
+		h2 {
+			float: left;
+		}
+	}
+	#selectedSubscriptions_filter,
+	#viewGUHTable_filter {
+		width: 50%;
+		label {
+			width: 100%;
+			text-align: right;
+			input {
+				 width: 40%;
+				 margin-left: 5px;
+				 vertical-align: baseline;
+			}
+		}
+	}
+	.aui #viewGUHTable_filter label, 
+	.aui #selectedSubscriptions_filter label {
+		width: 100%;
+	}
+	#viewGUHTable_length,
+	#viewGUHTable_filter {
+		width: 50%;
+	}
+	#viewGUHTable_filter {
+		float: right;
+	}
+	.subscriptionAlertsForm {
+		width: 70%;
+		margin-bottom: 30px;
+		.name,
+		.type {
+			width: 48%;
+			display: inline-block;
+			label {
+				display: block;
+			}
+		}
+		.name {
+			margin-right: 20px;
+		}
+		/*input[type="text"] {
+			display: inline-block;
+    		width: 70%;
+		}*/
+	}
+	.subscriptionAlertsThresholds {
+		width: 70%;
+		.info,
+		.warning,
+		.critical {
+			width: 15px;
+		    height: 15px;
+		    display: inline-block;
+		    border-radius: 25px;
+		    vertical-align: top;
+    		margin-right: 5px;
+		}
+		.info {
+			background-color: #5b8cb9;
+		}
+		.warning {
+			background-color: #cb7f36;
+		}
+		.critical {
+			background-color: #a12a2a;	
+		}
+		.btn-secondary {
+			background: #adadad;
+		}
+	}
+	
+	.saveCancelButtons {
+		text-align: right;
+	}
+}

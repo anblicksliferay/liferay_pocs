@@ -1,0 +1,9 @@
+Bundle-Name: Delphi-UserProfile-api
+Bundle-SymbolicName: com.delphi.userprofile.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.delphi.userprofile.exception,\
+	com.delphi.userprofile.model,\
+	com.delphi.userprofile.service,\
+	com.delphi.userprofile.service.persistence
+-includeresource: META-INF/service.xml=../Delphi-UserProfile-service/service.xml

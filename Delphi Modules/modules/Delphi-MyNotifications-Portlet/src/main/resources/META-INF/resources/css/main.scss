@@ -1,0 +1,498 @@
+h2.mfg-portlet-title{
+	margin-top:0;
+	font-size:2em;
+	margin-bottom: 0;
+}
+
+.mfg-warning{
+    margin: 0 auto;
+    width: 400px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+
+.portlet-boundary_com_ys_delphi_notification_portlet_MyNotificationPortlet_ {
+
+	.yield-alert-title {
+ 		text-align: center; 
+ 		background-color: #a7a7a7; 
+ 		color: #2f4050; 
+ 		white-space: nowrap;
+	}
+	.info {
+        background-color: #5b8cb9;
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+        border-radius: 25px;
+        vertical-align: top;
+        margin-right: 5px;
+    }
+    .warning {
+        background-color: #cb7f36;
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+        border-radius: 25px;
+        vertical-align: top;
+        margin-right: 5px;
+    }
+    .critical {
+        background-color: #a12a2a;
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+        border-radius: 25px;
+        vertical-align: top;
+        margin-right: 5px;
+    }
+    .calc-now-wrapper {
+        text-align: center;
+        line-height: 2.5;
+        white-space: nowrap;
+        width: 1px;
+        padding: 0;
+    }
+    .calc-now-button {
+        border-radius: 0;
+    }
+	#myNotificationTable_wrapper{
+		padding-top: 20px;
+		.chosen-container{
+			font-size:11px;
+			
+			.chosen-single{
+			    min-height: 28px;
+			    padding: 1px 9px;
+			    b{
+			        background-position: -18px 4px;
+			    }
+		    }
+		}
+		thead .sorting {
+			padding: 2px 6px;
+		}
+		tfoot th{
+			padding: 5px 7px;
+    		font-size: .9em;
+		}
+	}
+	
+	button, input[type="button"], input[type="reset"], input[type="submit"]{
+		width:auto;
+	}
+	
+	html .btn-xs {
+		border: 1px solid;
+		border-radius: 2px;
+	}
+	#dataButtons {
+		text-align: right;	
+	}
+	.dashboard-controls {
+		margin-top: 28px;
+	    text-align: right;
+	}
+	.floatRight {
+		float: right;
+	}
+	.ui-dialog.ui-widget.ui-widget-content{
+		z-index:2000;
+	}
+	.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+	    float: none;
+	}
+	.ui-widget-header .ui-dialog-title{
+	    text-transform: none;    
+	}
+	.ui-datepicker-trigger {
+		margin: 8px;
+	    vertical-align: top;
+	}
+	input,
+	select {
+	    width: inherit;
+	}
+	table {
+		input[type="text"] {
+			width: 100%;
+		}
+		.chosen-container {
+			width: 100% !important;
+		}
+	}
+	
+	#tableheader {
+		table td {
+			border:none;
+			h6{
+			    font-size: 10px;
+			    line-height: 0;
+			    margin: 0px 0px 5px 0px;
+			    text-decoration: underline;
+			    cursor: pointer;
+			}
+			input{		
+			    width: 100%;
+			    padding: 0;
+	    		text-align: center;
+	    		font-size: .9em;
+			}	
+			&.grey10{
+				background: #f2f2f2;
+			}
+			&.grey9{
+				background: #e8e8e8;
+			}
+			&.grey8{
+				background: #e2e2e2;
+			}
+			&.grey7{
+				background: #d2d2d2;
+			}
+			&.grey6{
+				background: #c6c6c6;
+			}
+			&.grey5{
+				background: #b8b8b8;
+			}
+			&.grey5{
+				background: #a7a7a7;
+			}
+			&.bordered{
+				border: 1px solid #b1b1b1; 
+			}
+			&.tabarea{
+				padding:0;
+				border-right: 0;
+			    border-left: 0;
+			    border-top: 0;
+			    background: none;
+			}
+				
+			.tabarea {
+				padding: 0;
+				border-right: 0;
+				border-left: 0;
+				border-top: 0;
+				background: none;
+			}
+			
+			/* Style the list */
+			ul.tab {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background: none;
+			}
+			
+			/* Float the list items side by side */
+			ul.tab li {
+				float: left;
+				line-height: 7px;
+				margin-right: 1px;
+			}
+			
+			/* Style the links inside the list items */
+			ul.tab li a {
+				display: inline-block;
+				color: black;
+				text-align: center;
+				text-decoration: none;
+				transition: 0.3s;
+				border-radius: 10px 10px 0px 0px;
+				border: 1px solid #b1b1b1;
+				border-bottom: 0;
+				font-size: .8em;
+				padding: 5px 10px;
+			}
+			
+			/* Change background color of links on hover */
+			ul.tab li a:hover {background-color: #ddd;}
+			
+			/* Create an active/current tablink class */
+			ul.tab li a:focus, .active {background-color: #e2e2e2;}
+			
+			@-webkit-keyframes fadeEffect {
+			    from {opacity: 0;}
+			    to {opacity: 1;}
+			}
+			
+			@keyframes fadeEffect {
+			    from {opacity: 0;}
+			    to {opacity: 1;}
+			}
+		}
+		#dateButtons {
+			text-align: right;
+			 margin-top: 25px;
+			
+		}
+	}
+	
+	.cycletimeadmin-controls form div  {
+		input,
+		select{	
+		    float: left;
+		    margin-left: 10px;
+	    }
+	    select{
+	        width: 140px;
+	    }
+	    input{
+	        width: 40px;
+	    }
+	    label{
+			float: left;
+	    	width: 60px;
+		    text-align: right;
+	    }
+	    .working-days{
+	    	font-size:1.1em;
+	    }
+	    &>span{
+		    text-align: left;
+		    float: left;
+		    font-weight: bold;
+		    font-style: italic;
+		    margin-left: 70px;
+	    }
+	    &:after {
+		    content: '';
+		    display: block;
+		    clear: both;
+		}
+	}
+	
+	#message { font-size: 0.9em;  color: #1eb32c;   }
+	
+	#myNotificationTable{
+		word-break: break-all;
+		tr{
+			cursor:pointer;
+		}
+	}
+	
+	#tablecontent,
+	#tableheader{
+			
+		text-align:center;
+			
+		a:hover { }
+		.hidden {  display: none; }
+		.white  {  color: #ffffff;}
+		.col, .left 	{  float: left; }
+		.right 	{  float: right; }
+		.clear 	{ clear: both; }
+		.green { color: #9fff01  }
+		.red { color: #ff7868 }
+		.big { font-size: 3em; margin: 5px 0px; }
+		pre { border: 1px solid #313131; background-color: rgba(255,255,255,0.2); padding: 5px  }
+		
+		.btn {
+		  border: none;
+		  font-family: inherit;
+		  font-size: inherit;
+		  color: inherit;
+		  background: none;
+		  cursor: pointer;
+		  padding: 20px 70px;
+		  display: inline-block;
+		  margin: 15px 30px;
+		  text-transform: uppercase;
+		  letter-spacing: 1px;
+		  font-weight: 300;
+		  outline: none;
+		  position: relative;
+		  -webkit-transition: all 0.3s;
+		  -moz-transition: all 0.3s;
+		  transition: all 0.3s;
+		  text-decoration: none;
+		
+		  color: #fff;
+		  overflow: hidden;
+		  background-color: rgba(0,0,0,0.3);
+		}
+		
+		/* all */
+		::-webkit-input-placeholder { color:#555555; font-weight: 300;  }
+		::-moz-placeholder { color:#555555; font-weight: 300 } /* firefox 19+ */
+		:-ms-input-placeholder { color:#555555; font-weight: 300 } /* ie */
+		input:-moz-placeholder { color:#555555;font-weight: 300  }
+		
+		#footer { position: relative; background-color: #313131; text-align: center; padding: 10px 0px;}
+		#footer a { color: #d1d1d1; margin: 0 10px  }
+		
+		table { width: 100%; }
+		table td {    
+		  padding: 2px;
+	   	  
+	   	  width: 9.105%;
+		}      
+		table td i { margin: 0px 5px; color: #636363 }
+		table th {
+			background: #636363;   
+			border: 1px solid #b1b1b1;  
+			text-transform: uppercase;
+			font-size: 0.9em;
+			font-weight: 300;
+			padding: 6px;
+			color: #fff;
+			text-align:center;
+		}  
+		table th a {
+		  color: #fff;
+		  
+		}
+		table td {
+			border: none;
+		}  
+	
+		#toggle { position: fixed; left: 0; padding: 10px; z-index: 10000; cursor: pointer; }
+		#toggle i { color: #fff;  font-size: 1.5em; }
+	}
+	
+	.no-close{
+	    background: transparent !important;
+	    border: 1px solid transparent !important; 
+	    .ui-dialog-titlebar {
+		  display: none ;
+		}
+		.ui-dialog-content {
+		      height: auto !important;
+		}
+	}
+	
+	tfoot{
+	    display: table-header-group;
+	    input {
+	        width: 100%;
+	        padding: 3px;
+	        box-sizing: border-box;
+	    }
+	}
+	.ui-datepicker-trigger{
+		margin: 8px;
+	    vertical-align: top;
+	}
+	.button-row{
+	    font-size: 1.2em;
+	    margin-bottom: 8px;
+	}
+}
+
+html .portlet .portlet-spinner{
+	border-color: transparent;
+    display: block;
+    position: absolute;
+    z-index:200;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,.5);
+    .spinner-wrapper{
+	   	height: auto;
+	    padding-top: 20%;
+    }
+}
+
+#main-content{
+	
+	/* Notification Detail Table */
+	.notificationDetail {
+		position: relative;
+		#tableheader3 {
+			margin: 0 0 20px 0;
+			.cycletimeadmin-controls-container {
+				font-weight: bold;
+				display: inline-block;
+				margin: 0 20px 0 0;
+				span {
+					&:last-child {
+						color: #293846;
+					}
+				}
+			}
+			.description {
+				font-weight: bold;
+			}
+		}
+		.cycletimeChart{
+			height:450px;
+			&.error-msg{
+				height:60px;
+				text-align:center;
+				border:1px solid #aaa;
+				padding:20px;
+				margin-bottom:10px;
+			}
+		}
+				
+		.cycletime-duration{
+			position: absolute;
+    		z-index: 999;
+    		right: 5px;
+			top: 5px;
+			button{
+				cursor:pointer;
+				border: 1px solid #d2d2d2;
+			}
+		}
+		
+		.detailDescription {
+			thead {
+				th {
+					border-left: 0;
+					border-bottom: 1px solid #cdcccc;
+				}
+			}
+			table {
+				border: 1px solid #cdcccc;
+				margin-bottom: 10px;
+				#yield-alert {
+					margin-bottom: 0;
+					border: none;
+				}
+				td {
+					border-top: 0;
+					border-left: 0;
+				}
+			}
+		}
+		.description{
+			padding: 5px 0 10px;
+    		display: block;
+		}
+	}
+}
+
+i.fa.fa-caret-down {
+	float: right;
+	margin-left: 10px;
+	font-size: 2em;
+	cursor: pointer;
+}
+
+@media (max-width: 767px) {
+	h2.mfg-portlet-title{
+		font-size:1.5em;
+	}
+	.portlet-boundary_com_ys_delphi_notification_portlet_MyNotificationPortlet_ {
+		.main.subscriptions-controls-container {
+    		margin-top: 10px;
+		}
+		select.chosen-select-region,
+		select.chosen-select-site,
+		select.chosen-select-server {
+			width: 100%;
+		}
+		table#myNotificationTable {
+			display: block;
+			word-break: normal;
+		}
+	}
+}

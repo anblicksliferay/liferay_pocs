@@ -1,0 +1,202 @@
+html .myNotificationPopupTable .dataTables_wrapper{
+	padding-top: 0px;
+}
+
+#myNotificationPopupTable td{cursor:pointer}
+
+#mini-close{
+    position: absolute;
+	top: 0;
+	right: 3px;
+	font-size: 1.5em;
+	cursor:pointer;
+}
+
+.mfg-alert-container-dropdown{
+	position: absolute;
+    right: 0;
+    width: 450px;
+    display: block;
+    z-index: 9999;
+    max-width: 450px;
+    padding: 5px;
+    background-color: white;
+    min-height: 300px;
+    border: 2px solid #1ab394;
+    border-radius: 2px;
+}
+
+@media (max-width: 475px) {
+	.mfg-alert-container-dropdown {
+		width: 294px;
+	}
+	.myNotificationPopupTable .row.miniLegend span .fa {
+		margin: 4px!important;
+	}
+	html .dataTables_wrapper .dataTables_paginate .paginate_button {
+		padding: 0.3em 0.7em;
+	}
+	.view-details-button {
+	    background-color: #1ab394;
+    	background: #1ab394;
+    	padding: 5px 10px;
+    	border-radius: 2px;
+    	color: white;
+    	border: none;
+	    margin: 10px 5px;
+	}
+}
+.myNotificationPopupTable{
+	.dataTables_length,
+	.dataTables_filter,
+	thead{
+		display:none;
+	}
+	td {
+		cursor:pointer;
+	}
+}
+
+.portlet-boundary_com_ys_delphi_notification_portlet_MyNotificationPortlet_,
+.myNotificationPopupTableGrid {
+			
+	.alert-lvl-disabled{
+		background-color: #CCC!important;
+			
+		&.alert-lvl-crit{
+			.fa{
+				color: #C77;
+			}
+		}
+		&.alert-lvl-warn{
+			.fa{
+				color: #Fb7;
+			}
+		}
+		&.alert-lvl-info{
+			.fa{
+				color: #8bd;
+			}
+		}
+	}
+	.alert-lvl-crit{
+		background-color: #C77; 
+		color:#222;
+	}
+	.alert-lvl-warn{
+		background-color: #Fb7; 
+		color:#222;
+	}
+	.alert-lvl-info{
+		background-color: #8bd; 
+		color:#222;
+	}
+	.alert-lvl-crit-yield {
+		background-color: #C77;
+		color:#222;
+	}
+	.alert-lvl-warn-yield {
+		background-color: #Fb7;
+		color:#222;
+	}
+	.alert-lvl-info-yield {
+		background-color: #8bd;
+		color:#222;
+	}
+	
+	.alert-lvl-crit,
+	.alert-lvl-warn,
+	.alert-lvl-info {
+		font-weight: bold;
+	    position: relative;
+	    padding-left: 35px;
+	    height: 25px;
+    	border-bottom: 1px solid #fff;
+		.fa {
+			font-size: 2em;
+		    position: absolute;
+		    left: 7px;
+    		top: 8px;
+		    &.fa.fa-cogs{
+				font-size: 1.7em;
+		    }
+	    }
+	}
+}
+
+#p_p_id_mymininotification_WAR_MyNotificationportlet_{
+	display:none;
+}
+
+html .mfg-alert-container{    
+    display: inline-block;
+    vertical-align: top;
+    
+    background: #1ab394;
+    padding: 3px;
+    border-radius: 2px;
+    position: relative;
+    right: -3px;
+    
+	.mfg-alert{	
+		cursor:pointer;
+	    color: #333;
+	    min-width: 22px;
+	    height: 22px;
+	    display: inline-block;
+	    text-align: center;
+	    -webkit-border-radius: 10px;
+	    border-radius: 11px;
+    	padding: 2px 3px;
+	    margin: 5px;
+	    &.crit{ background-color: #C77; }
+	    &.warn{ background-color: #Fb7; }
+	    &.info{ background-color: #8bd; }
+	}
+		
+	.server-data-warning{
+		cursor: pointer;
+		color: #333;
+		min-width: 22px;
+		height: 22px;
+		display: inline-block;
+		text-align: center;
+		-webkit-border-radius: 10px;
+		border-radius: 11px;
+		padding: 2px 6px;
+		margin: 5px;background-color: #C77;
+		color:#FFF;
+		font-style: italic;
+	}
+		
+	
+	
+	.no-close{
+	    background: transparent !important;
+	    border: 1px solid transparent !important; 
+	    .ui-dialog-titlebar {
+		  display: none ;
+		}
+		.ui-dialog-content {
+		      height: auto !important;
+		}
+	}
+}
+
+#myNotificationPopupTable td:first-child{
+	text-align:center;
+}
+.myNotificationPopupTable div.row > span{
+	cursor:pointer;
+}
+.miniLegend .selected{
+	font-weight:bold;
+	color:#1ab394;
+}
+#myNotificationPopupTable th:first-child::after{
+       content:"";
+}
+.aui .myMiniNotificationPopupWrapper.modal.yui3-widget {
+    width: 50% !important;
+    margin-left: 25%;
+}

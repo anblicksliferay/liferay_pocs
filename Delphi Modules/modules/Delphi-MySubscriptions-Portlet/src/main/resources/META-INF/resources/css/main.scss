@@ -1,0 +1,685 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#portlet_com_ys_delphi_subscriptions_portlet_MySubscriptions{
+	
+	.alert-success, .lfr-alert-container, .portlet-icon-back{
+		display:none;
+	}
+	table th{
+		height:auto;
+	}
+	.ui-dialog.ui-widget.ui-widget-content {
+		z-index: 2000;
+	}
+	.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+		float: none;
+	}
+	.ui-widget-header .ui-dialog-title {
+		text-transform: none;
+	}
+	textarea, .uneditable-input {
+		width: 100%;
+	}
+	.select-info {
+		margin-left: 15px;
+		display: inline-block;
+	}
+	.ui-dialog-buttonpane .ui-dialog-buttonset .ui-button:first-child {
+		float: right;
+		margin-right: 0;
+	}
+	.red {
+		color: #a12a2a;
+	}
+	.warning-text {
+	    width: 40%;
+    	text-align: left;
+    	margin-left: 6%;
+	}
+	#tableheader table td {
+		border: none;
+		/* Style the list */
+		/* Float the list items side by side */
+		/* Style the links inside the list items */
+		/* Change background color of links on hover */
+		/* Create an active/current tablink class */
+		@-webkit-keyframes fadeEffect {
+			from {
+				opacity: 0;
+			}
+			to {
+				opacity: 1;
+			}
+		}
+		@keyframes fadeEffect {
+			from {
+				opacity: 0;
+			}
+			to {
+				opacity: 1;
+			}
+		}
+	}
+	#tableheader table td h6 {
+		font-size: 10px;
+		line-height: 0;
+		margin: 0px 0px 5px 0px;
+		text-decoration: underline;
+		cursor: pointer;
+	}
+	#tableheader table td input {
+		width: 100%;
+		padding: 0;
+		text-align: center;
+	}
+	#tableheader table td.grey10 {
+		background: #f2f2f2;
+	}
+	#tableheader table td.grey9 {
+		background: #e8e8e8;
+	}
+	#tableheader table td.grey8 {
+		background: #e2e2e2;
+	}
+	#tableheader table td.grey7 {
+		background: #d2d2d2;
+	}
+	#tableheader table td.grey6 {
+		background: #c6c6c6;
+	}
+	#tableheader table td.grey5 {
+		background: #b8b8b8;
+	}
+	#tableheader table td.grey5 {
+		background: #a7a7a7;
+	}
+	#tableheader table td.bordered {
+		border: 1px solid #b1b1b1;
+	}
+	#tableheader table td.tabarea {
+		padding: 0;
+		border-right: 0;
+		border-left: 0;
+		border-top: 0;
+		background: none;
+	}
+	#tableheader table td .tabarea {
+		padding: 0;
+		border-right: 0;
+		border-left: 0;
+		border-top: 0;
+		background: none;
+	}
+	#tableheader table td ul.tab {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background: none;
+	}
+	#tableheader table td ul.tab li {
+		float: left;
+		line-height: 7px;
+		margin-right: 1px;
+	}
+	#tableheader table td ul.tab li a {
+		display: inline-block;
+		color: black;
+		text-align: center;
+		text-decoration: none;
+		transition: 0.3s;
+		border-radius: 10px 10px 0px 0px;
+		border: 1px solid #b1b1b1;
+		border-bottom: 0;
+		font-size: .8em;
+		padding: 5px 10px;
+	}
+	#tableheader table td ul.tab li a:hover {
+		background-color: #ddd;
+	}
+	#tableheader table td ul.tab li a:focus,
+	#tableheader table td .active {
+		background-color: #e2e2e2;
+	}
+	#tableheader .mysubscription-controls-container {
+		display: inline-block;
+		width: 300px;
+	}
+	#viewSubscriptionsTable .editControl,
+	#viewSubscriptionsTable .deleteControl {
+		cursor: pointer;
+	}
+	.cycletimeadmin-controls form div input, 
+	.cycletimeadmin-controls form div select {
+		float: left;
+		margin-left: 10px;
+	}
+	.cycletimeadmin-controls form div select {
+		width: 140px;
+	}
+	.cycletimeadmin-controls form div input {
+		width: 40px;
+	}
+	.cycletimeadmin-controls form div label {
+		float: left;
+		width: 60px;
+		text-align: right;
+	}
+	.cycletimeadmin-controls form div .working-days {
+		font-size: 1.1em;
+	}
+	.cycletimeadmin-controls form div > span {
+		text-align: left;
+		float: left;
+		font-weight: bold;
+		font-style: italic;
+		margin-left: 70px;
+	}
+	.cycletimeadmin-controls form div:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+	#message {
+		font-size: 0.9em;
+		color: #1eb32c;
+	}
+	#tablecontent, 
+	#tableheader {
+		text-align: center;/* all *//* firefox 19+ */
+	/* ie */ }
+	#tablecontent .hidden,
+	#tableheader .hidden {
+		display: none;
+	}
+	#tablecontent .white,
+	#tableheader .white {
+		color: #ffffff;
+	}
+	#tablecontent .col,
+	#tablecontent .left,
+	#tableheader .col, 
+	#tableheader .left {
+		float: left;
+	}
+	#tablecontent .right,
+	#tableheader .right {
+		float: right;
+	}
+	
+	#tablecontent .clear,
+	#tableheader .clear {
+		clear: both;
+	}
+	#tablecontent .green,#tableheader .green {
+		color: #9fff01;
+	}
+	#tablecontent .red,#tableheader .red {
+		color: #ff7868;
+	}
+	#tablecontent .big,
+	#tableheader .big {
+		font-size: 3em;
+		margin: 5px 0px;
+	}
+	#tablecontent pre,
+	#tableheader pre {
+		border: 1px solid #313131;
+		background-color: rgba(255, 255, 255, 0.2);
+		padding: 5px;
+	}
+	#tablecontent .btn, 
+	#tableheader .btn {
+		border: none;
+		font-family: inherit;
+		font-size: inherit;
+		color: inherit;
+		background: none;
+		cursor: pointer;
+		padding: 20px 70px;
+		display: inline-block;
+		margin: 15px 30px;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-weight: 300;
+		outline: none;
+		position: relative;
+		-webkit-transition: all 0.3s;
+		-moz-transition: all 0.3s;
+		transition: all 0.3s;
+		text-decoration: none;
+		color: #fff;
+		overflow: hidden;
+		background-color: rgba(0, 0, 0, 0.3);
+	}
+	#tablecontent ::-webkit-input-placeholder, 
+	#tableheader ::-webkit-input-placeholder {
+		color: #555555;
+		font-weight: 300;
+	}
+	#tablecontent ::-moz-placeholder, 
+	#tableheader ::-moz-placeholder {
+		color: #555555;
+		font-weight: 300;
+	}
+	#tablecontent :-ms-input-placeholder, 
+	#tableheader :-ms-input-placeholder {
+		color: #555555;
+		font-weight: 300;
+	}
+	#tablecontent input:-moz-placeholder, 
+	#tableheader input:-moz-placeholder {
+		color: #555555;
+		font-weight: 300;
+	}
+	#tablecontent #footer, 
+	#tableheader #footer {
+		position: relative;
+		background-color: #313131;
+		text-align: center;
+		padding: 10px 0px;
+	}
+	#tablecontent #footer a, 
+	#tableheader #footer a {
+		color: #d1d1d1;
+		margin: 0 10px;
+	}
+	#tablecontent table, 
+	#tableheader table {
+		width: 100%;
+	}
+	#tablecontent table td, 
+	#tableheader table td {
+		padding: 2px;
+	}
+	#tablecontent table td i, 
+	#tableheader table td i {
+		margin: 0px 5px;
+		color: #636363;
+	}
+	#tablecontent table th, 
+	#tableheader table th {
+		background: #636363;
+		border: 1px solid #b1b1b1;
+		text-transform: uppercase;
+		font-size: 0.9em;
+		font-weight: 300;
+		padding: 6px;
+		color: #fff;
+		text-align: center;
+	}
+	#tablecontent table th a, 
+	#tableheader table th a {
+		color: #fff;
+	}
+	#tablecontent #toggle, 
+	#tableheader #toggle {
+		position: fixed;
+		left: 0;
+		padding: 10px;
+		z-index: 10000;
+		cursor: pointer;
+	}
+	#tablecontent #toggle i, 
+	#tableheader #toggle i {
+		color: #fff;
+		font-size: 1.5em;
+	}
+	table#selectedSubscriptions tfoot tr th {
+		display: none;
+	}
+	table#productProcessTable tbody tr, 
+	table#selectedSubscriptions tbody tr {
+		cursor: pointer;
+	}
+	table#productProcessTable tbody tr.selected, 
+	table#selectedSubscriptions tbody tr.selected {
+		background-color: #B0BED9;
+		color: #333;
+	}
+	table#productProcessTable tbody tr.selected td, 
+	table#selectedSubscriptions tbody tr.selected td {
+		background-color: transparent;
+	}
+	table#productProcessTable tbody tr:hover, 
+	table#selectedSubscriptions tbody tr:hover {
+		background-color: #B6C4DF;
+		color: #444;
+	}
+	table#yield-alert {
+		border: none;
+	}
+	.yield-alert-title {
+		text-align: center; 
+		background-color: #a7a7a7; 
+		color: #2f4050; 
+		white-space: nowrap;
+	}
+	.calc-now-wrapper {
+		padding: 0;
+		text-align: center; 
+		line-height: 4.5; 
+		white-space: nowrap; 
+		width: 1px;
+	}
+	.calc-now-button {
+		border-radius: 0;
+	}
+	.no-close {
+		background: transparent !important;
+		border: 1px solid transparent !important;
+	}
+	.no-close .ui-dialog-titlebar {
+		display: none;
+	}
+	.no-close .ui-dialog-content {
+		height: auto !important;
+	}
+	tfoot input {
+		width: 100%;
+		padding: 3px;
+		box-sizing: border-box;
+	}
+	tfoot {
+		display: table-header-group;
+	}
+	.dataTables_wrapper .dataTables_filter input {
+		margin-left: 0;
+	}
+	.table .textCenter {
+		text-align: center;
+	}
+	.textCenter {
+		text-align: center;
+	}
+	.subscriptionsAddWrapper {
+		overflow: hidden;
+	}
+	.subscriptionsAddWrapper a {
+		float: right;
+		position: relative;
+		z-index: 150;
+	}
+	#viewSubscriptionsTable_filter, 
+	#selectedSubscriptions_filter {
+		text-align: left;
+	}
+	#viewSubscriptionsTable_filter label, 
+	#selectedSubscriptions_filter label {
+		float: right;
+	}
+	#selectedSubscriptions_length select, 
+	#viewSubscriptionsTable_length select {
+		margin-bottom: 0;
+	}
+	#viewSubscriptionsTable .editControl, 
+	#viewSubscriptionsTable .deleteControl, 
+	#viewSubscriptionsTable .filterControl, 
+	#viewSubscriptionsTable .alertType {
+		text-align: center;
+	}
+	#selectedSubscriptions_wrapper {
+		display: block;
+    	overflow-x: auto;
+	}
+	#viewSubscriptionsTable td.alertType {
+		font-size: 1.3em;
+	}
+	#viewSubscriptionsTable td.filterControl {
+		font-size: 1.3em;
+		color:#aaa;
+		cursor:pointer;
+	}
+	#viewSubscriptionsTable .filterControl.active {
+		font-size: 1.2em;
+		color:#000;
+	}
+	table.dataTable.no-footer {
+		border-bottom: none;
+	}
+	#moveRows td {
+		text-align: center;
+	}
+	#moveRows td i {
+		color: #1ab394;
+		font-size: 1.5em;
+		vertical-align: middle;
+	}
+	#productProcessTable_wrapper {
+		background-color: #f9f9f9;
+		padding-bottom: 0;
+		overflow-x: auto;
+	}
+	#productProcessTable {
+		margin-bottom: 0;
+	}
+	#productProcessTable_info {
+		/* border-left: 2px solid #EBEBEB; */
+		padding: 10px 0 8px 10px;
+	}
+	#productProcessTable_paginate {
+		/* border-right: 2px solid #EBEBEB; */
+	}
+	.addRemoveButtons {
+		/* border-right: 2px solid #ebebeb; */
+		/* border-bottom: 2px solid #EBEBEB; */
+		/* border-left: 2px solid #ebebeb; */
+		margin-bottom: 50px;
+		/* background-color: #f9f9f9; */
+	}
+	.addRemoveButtons .addSubscription,
+	.addRemoveButtons .removeSubscription {
+		width: 49%;
+		display: inline-block;
+		text-align: center;
+		padding: 10px;
+		/* background-color: #f9f9f9; */
+	}
+	.addRemoveButtons .subscriptionButtonWrapper {
+		background-color: #1ab394;
+		border-radius: 2px;
+		color: white;
+		width: 55%;
+		margin: 0 auto;
+	}
+	.subscriptionAlertsForm .name,
+	.subscriptionAlertsForm .type {
+		vertical-align: top;
+		margin-bottom: 10px;
+	}
+	.returnError {
+		border: 1px solid #ed5565;
+	}
+	.subscriptionAlertsThresholds {
+		display: block;
+    	overflow-x: auto;
+    	position: relative;
+	}
+	.subscriptionAlertsThresholds .info, 
+	.subscriptionAlertsThresholds .warning, 
+	.subscriptionAlertsThresholds .critical {
+		width: 15px;
+		height: 15px;
+		display: inline-block;
+		border-radius: 25px;
+		vertical-align: top;
+		margin-right: 5px;
+	}
+	.subscriptionAlertsThresholds .info {
+		background-color: #5b8cb9;
+	}
+	.subscriptionAlertsThresholds .warning {
+		background-color: #cb7f36;
+	}
+	.subscriptionAlertsThresholds .critical {
+		background-color: #a12a2a;
+	}
+	.subscriptionAlertsThresholds .btn-secondary {
+		background: #adadad;
+	}
+	.saveCancelButtons .required {
+		font-size: 1.1em;
+		display: inline-block;
+		margin-right: 20px;
+		font-weight: bold;
+	}
+	.saveCancelButtons {
+		text-align: right;
+		margin-top: 20px;
+	}
+	.subscription-select-all{
+		width: 100%;
+	    margin-top: 5px;
+	    &.selected{
+	        background: #1a7354;
+	        background-color: #1a7354;
+	    }
+	}
+	.subscriptionHideRow {
+		margin-top: 25px;
+	}
+	#viewSubscriptionsTable_wrapper {
+    	padding-bottom: 0;
+	}
+	i.fa.fa-caret-down {
+		position: relative;
+		margin-left: 10px;
+		font-size: 3em;
+		line-height: 27px;
+		-moz-transition: all .5s linear;
+	    -webkit-transition: all .5s linear;
+	    transition: all .5s linear;
+	}
+	i.fa.fa-caret-down.rotate {
+	    -moz-transform: rotate(-180deg);
+	    -webkit-transform: rotate(-180deg);
+	    transform: rotate(-180deg);
+	}
+	@media (max-width: 767px) {
+		.subscriptionsAddWrapper a {
+			margin-top: 0;
+		}
+		#viewSubscriptionsTable {
+			display: block;
+		}
+		#selectedSubscriptions_filter label, 
+		#viewSubscriptionsTable_filter label {
+			width: 100%;
+		}
+		.main.subscriptions-controls-container {
+    		margin-top: 10px;
+		}
+		.chosen-select-region,
+		.chosen-select-site,
+		.chosen-select-server {
+			width: 100%;
+		}
+		.addRemoveButtons .addSubscription,
+		.addRemoveButtons .removeSubscription {
+			width: 100%;
+			display: block;
+		}
+		.subscriptionAlertsForm {
+			padding-top: 30px;
+		}
+		select#subType {
+			width: 100%;
+		}
+		.warning-text {
+			width: 100%;
+			margin-left: 0;
+		}
+	}
+	
+	@media (min-width: 768px) {
+		.subscriptionsAddWrapper h2 {
+			float: left;
+		}
+		#selectedSubscriptions_filter,#viewSubscriptionsTable_filter {
+			width: 50%;
+		}
+		#selectedSubscriptions_filter label, 
+		#viewSubscriptionsTable_filter label {
+			width: 100%;
+			text-align: right;
+		}
+		#selectedSubscriptions_filter label input, 
+		#viewSubscriptionsTable_filter label input {
+			width: 40%;
+			margin-left: 5px;
+			vertical-align: baseline;
+		}
+		#viewSubscriptionsTable_filter label, 
+		#selectedSubscriptions_filter label {
+			width: 100%;
+		}
+		#viewSubscriptionsTable_length, 
+		#viewSubscriptionsTable_filter {
+			width: 50%;
+		}
+		#viewSubscriptionsTable_filter {
+			float: right;
+		}
+		.subscriptionAlertsForm {
+			width: 100%;
+			margin-bottom: 20px;
+		}
+		.subscriptionAlertsForm .name, 
+		.subscriptionAlertsForm .type,
+		.subscriptionAlertsForm .description {
+			width: 48%;
+			display: inline-block;
+		}
+		.subscriptionAlertsForm .name label, 
+		.subscriptionAlertsForm .type label {
+			display: block;
+		}
+		.subscriptionAlertsForm .name {
+			margin-right: 20px;
+		}
+		.subscriptionAlertsThresholds .info, 
+		.subscriptionAlertsThresholds .warning, 
+		.subscriptionAlertsThresholds .critical {
+			width: 15px;
+			height: 15px;
+			display: inline-block;
+			border-radius: 25px;
+			vertical-align: top;
+			margin-right: 5px;
+		}
+		.subscriptionAlertsThresholds .info {
+			background-color: #5b8cb9;
+		}
+		.subscriptionAlertsThresholds .warning {
+			background-color: #cb7f36;
+		}
+		.subscriptionAlertsThresholds .critical {
+			background-color: #a12a2a;
+		}
+		.subscriptionAlertsThresholds .btn-secondary {
+			background: #adadad;
+		}
+	}
+}
+#_com_ys_delphi_subscriptions_portlet_MySubscriptions_mini-spinner.portlet-spinner {
+	top: 0;
+	.spinner-wrapper{
+		padding-top: 15%;
+	}
+}
+html .portlet .portlet-spinner{
+	border-color: transparent;
+	display: block;
+	position: absolute;
+	z-index:200;
+	top: 60px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255,255,255,.5);
+	.spinner-wrapper{
+		height: auto;
+		padding-top: 20%;
+	}
+}
