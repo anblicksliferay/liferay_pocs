@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.0.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_0_0.dtd">
+
+<service-builder package-path="com.ys.hma.account">
+	<namespace>HMA</namespace>
+	<!--<entity data-source="sampleDataSource" local-service="true" name="Foo" remote-service="false" session-factory="sampleSessionFactory" table="foo" tx-manager="sampleTransactionManager uuid="true"">-->
+	<entity name="Book" table="Book" local-service="true" remote-service="true">
+        <column name="bookId" type="long" primary="true" id-type="increment"/>
+        <column name="bookName" type="String" />
+        <column name="description" type="String" />
+        <column name="authorName" type="String" />
+        <column name="isbn" type="int" />
+        <column name="price" type="int" />
+    </entity>
+    <entity name="Data" table="Data" local-service="true" remote-service="true">
+		<column name="DataId" type="long" primary="true" id-type="increment"></column>
+		<column name="StartDate" type="Date"></column>
+		<column name="EndDate" type="Date"></column>
+		<column name="Exported" type="int"></column>
+		<column name="NotExported" type="int"></column>
+	</entity>
+</service-builder>

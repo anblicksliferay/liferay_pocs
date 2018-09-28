@@ -1,0 +1,9 @@
+Bundle-Name: AccountingAPI-api
+Bundle-SymbolicName: com.ys.hma.account.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.ys.hma.account.exception,\
+	com.ys.hma.account.model,\
+	com.ys.hma.account.service,\
+	com.ys.hma.account.service.persistence
+-includeresource: META-INF/service.xml=../AccountingAPI-service/service.xml
