@@ -1,0 +1,4 @@
+Bundle-Name: PDCA
+Bundle-SymbolicName: com.astra.anblicks.pdca
+Bundle-Version: 1.0.0
+Export-Package: com.astra.anblicks.pdca.constants

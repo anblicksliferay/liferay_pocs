@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation=" http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean class="com.astra.anblicks.pdca.service.impl.kpiLocalServiceImpl" id="com.astra.anblicks.pdca.service.kpiLocalService" />
+	<bean class="com.astra.anblicks.pdca.service.impl.kpiServiceImpl" id="com.astra.anblicks.pdca.service.kpiService" />
+	<bean class="com.astra.anblicks.pdca.service.persistence.impl.kpiPersistenceImpl" id="com.astra.anblicks.pdca.service.persistence.kpiPersistence" parent="basePersistence" />
+</beans>
