@@ -12,7 +12,8 @@ public class PDCAPortletKeys {
 	public static final String MasterData = "MasterData";
 	public static final String Mom = "MinutesOfMeeting";
 	public static final String AstraParentFolderName = "AstraPDCA";
-	public static final String AstraSampleExcel = "AstraExcelSample.xls";
+	public static final String AstraSampleExcel = "AstraExcelSample.xlsx";
+	public static final String AstraSamplePdf = "AstraPdfSample.pdf";
 	public static final String CLAFolderName = "Astra_CLA";
 	public static final String CLAFolderDesc = "To store the excel files";
 	public static final String CLAExcelDesc = "To do calculations on KPI Data";

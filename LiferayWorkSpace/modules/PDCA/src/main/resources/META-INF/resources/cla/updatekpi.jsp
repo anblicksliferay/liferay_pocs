@@ -1,6 +1,4 @@
-<%@ taglib uri="http://java.sun.com/portlet_2_0" prefix="portlet" %>
 <%@ include file="/cla/init.jsp" %>
-
 
 
 <div class="row">
@@ -15,6 +13,13 @@
 <portlet:actionURL var="getfile" name="getfile"/>
 <form name="getfileFrom" id="getfileFrom" action="<%=getfile.toString() %>" method="post" name="update">
 <button   class="btn-success">Get Kpi Data</button>
+</form> 
+</div>
+
+<div class="col-md-2">
+<portlet:actionURL var="getpdffile" name="getpdffile"/>
+<form name="getpdffileFrom" id="getpdffileFrom" action="<%=getpdffile.toString() %>" method="post" name="update">
+<button   class="btn-success">Get Kpi Pdf Data</button>
 </form> 
 </div>
 </div>

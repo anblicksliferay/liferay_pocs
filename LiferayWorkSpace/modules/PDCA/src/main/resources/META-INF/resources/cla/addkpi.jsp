@@ -1,4 +1,3 @@
-<%@ taglib uri="http://java.sun.com/portlet_2_0" prefix="portlet" %>
 <%@ include file="/cla/init.jsp" %>
 
 <div class="row">
