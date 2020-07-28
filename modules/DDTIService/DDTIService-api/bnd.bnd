@@ -1,9 +1,0 @@
-Bundle-Name: DDTIService-api
-Bundle-SymbolicName: com.ab.all.api
-Bundle-Version: 1.0.0
-Export-Package:\
-	com.ab.all.exception,\
-	com.ab.all.model,\
-	com.ab.all.service,\
-	com.ab.all.service.persistence
--includeresource: META-INF/service.xml=../DDTIService-service/service.xml

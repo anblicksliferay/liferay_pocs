@@ -1,4 +1,0 @@
-Bundle-Name: LanguageModule
-Bundle-SymbolicName: LanguageModule
-Bundle-Version: 1.0.0
-Export-Package: LanguageModule.constants

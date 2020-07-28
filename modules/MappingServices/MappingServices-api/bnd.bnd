@@ -1,9 +1,0 @@
-Bundle-Name: MappingServices-api
-Bundle-SymbolicName: com.MappingServices.api
-Bundle-Version: 1.0.0
-Export-Package:\
-	com.MappingServices.exception,\
-	com.MappingServices.model,\
-	com.MappingServices.service,\
-	com.MappingServices.service.persistence
--includeresource: META-INF/service.xml=../MappingServices-service/service.xml

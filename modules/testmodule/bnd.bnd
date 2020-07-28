@@ -1,4 +1,0 @@
-Bundle-Name: testmodule
-Bundle-SymbolicName: testmodule
-Bundle-Version: 1.0.0
-Fragment-Host: com.liferay.calendar.web;bundle-version="1.0.37"

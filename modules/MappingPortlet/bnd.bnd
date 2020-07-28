@@ -1,7 +1,0 @@
-Bundle-Name: MappingPortlet
-Bundle-SymbolicName: com.mappingportlet
-Bundle-Version: 1.0.0
-Export-Package: com.mappingportlet.constants
--includeresource:\
-@com.liferay.util.java-[0-9]*.jar!/com/liferay/util/ContentUtil.class,\
-@com.liferay.util.java-[0-9]*.jar!/com/liferay/util/portlet/PortletProps.class,\

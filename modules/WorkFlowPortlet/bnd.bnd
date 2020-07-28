@@ -1,4 +1,0 @@
-Bundle-Name: WorkFlowPortlet
-Bundle-SymbolicName: com.astra.workflow
-Bundle-Version: 1.0.0
-Export-Package: com.astra.workflow.constants

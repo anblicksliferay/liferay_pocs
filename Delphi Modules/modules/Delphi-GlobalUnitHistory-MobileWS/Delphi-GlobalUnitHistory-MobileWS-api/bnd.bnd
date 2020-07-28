@@ -1,7 +1,0 @@
-Bundle-SymbolicName: delphi.globalunithistory.mobilews-api
-Bundle-Version: 1.0.0
-Export-Package:\
-	com.ys.delphi.guh.mobileservice.exception,\
-	com.ys.delphi.guh.mobileservice.model,\
-	com.ys.delphi.guh.mobileservice.service,\
-	com.ys.delphi.guh.mobileservice.service.persistence

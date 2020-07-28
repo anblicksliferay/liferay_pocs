@@ -1,9 +1,0 @@
-Bundle-Name: PDCAService-api
-Bundle-SymbolicName: com.astra.anblicks.pdca.api
-Bundle-Version: 1.0.0
-Export-Package:\
-	com.astra.anblicks.pdca.exception,\
-	com.astra.anblicks.pdca.model,\
-	com.astra.anblicks.pdca.service,\
-	com.astra.anblicks.pdca.service.persistence
--includeresource: META-INF/service.xml=../PDCAService-service/service.xml

@@ -1,4 +1,0 @@
-Bundle-Name: Delphi-UserProfile-portlet
-Bundle-SymbolicName: com.delphi.userprofile.portlet
-Bundle-Version: 1.0.0
-Include-Resource: @httpclient-4.5.3.jar, @httpcore-4.4.6.jar

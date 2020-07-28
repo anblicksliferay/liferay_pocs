@@ -1,4 +1,0 @@
-Bundle-Name: AptivCommonAPI
-Bundle-SymbolicName: com.aptiv.commonapi
-Bundle-Version: 1.0.0
-Export-Package: com.aptiv.commonapi.api

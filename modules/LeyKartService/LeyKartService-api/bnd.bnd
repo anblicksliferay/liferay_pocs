@@ -1,9 +1,0 @@
-Bundle-Name: LeyKartService-api
-Bundle-SymbolicName: com.leykartservice.api
-Bundle-Version: 1.0.0
-Export-Package:\
-	com.leykartservice.exception,\
-	com.leykartservice.model,\
-	com.leykartservice.service,\
-	com.leykartservice.service.persistence
--includeresource: META-INF/service.xml=../LeyKartService-service/service.xml

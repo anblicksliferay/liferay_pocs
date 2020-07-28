@@ -1,6 +1,0 @@
-Bundle-Name: AptivCommonServices
-Bundle-SymbolicName: com.aptiv.commonservices
-Bundle-Version: 1.0.0
-Export-Package: com.aptiv.commonservices.service, com.aptiv.commonservices.service.impl, com.aptiv.commonservices.service.model
-#Bundle-Activator: com.aptiv.commonservices.service.activator.ServiceActivator
-Include-Resource: @httpclient-4.5.3.jar, @httpcore-4.4.6.jar
